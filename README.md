@@ -1,12 +1,8 @@
-# template-vite-vue2-vuetify
+# Device Management
 
-`Vite + Vue 2 + Vuex + Vue Router + Vuetify`
+`Vite + Vue 2 + Vue Router + Vuetify`
 
 ## Start
-
-```bash
-npx degit slime7/template-vite-vue2-vuetify my-project
-```
 
 ```bash
 yarn dev # start dev server
