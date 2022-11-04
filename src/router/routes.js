@@ -1,7 +1,7 @@
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 
 function load(component) {
-    return () => import(/* webpackChunkName: "[request]" */ `@/views/${component}.vue`)
+    return () => import(/* webpackChunkName: "[request]" */ `../views/${component}.vue`)
 }
 
 const routes = [
@@ -16,9 +16,20 @@ const routes = [
                 component: load('HomePage'),
             },
             {
+                path: '/create-device',
+                name: 'CreateDevice',
+                component: load('device/CreateDevice'),
+            },
+            {
+                path: '/user',
+                name: 'user',
+                component: load('user/UserPage'),
+            },
+            {
                 path: '/:pathMatch(.*)*',
                 component: load('NotFoundPage'),
-            },
+            }
+           
         ],
     },
 ];

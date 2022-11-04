@@ -18,6 +18,7 @@
     "vuetify": "^2.5.8"
   },
   "devDependencies": {
+    "@mdi/font": "^7.0.96",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
