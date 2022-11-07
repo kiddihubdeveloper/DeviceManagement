@@ -1,23 +1,11 @@
 <template>
-  <v-card>
+  <v-card class="ml-3">
     <v-card-text>
       <v-container>
         <v-row>
-          <v-col cols="12" sm="6" md="6">
-            <v-text-field
-              v-model="editedItem.productCode"
-              label="Mã thiết bị"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="6" md="6">
-            <v-text-field
-              v-model="editedItem.productName"
-              label="Tên thiết bị"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="12" md="12">
+          <v-col cols="6" sm="6" md="6">
             <v-file-input
-              v-model="editedItem.productPicture"
+              v-model="editedItem.deviceImage"
               accept="image/png, image/jpeg, image/bmp"
               prepend-icon="mdi-camera"
               @change="selectImage"
@@ -26,15 +14,34 @@
               placeholder="Pick an image"
             ></v-file-input>
           </v-col>
-          <v-col cols="12" sm="12" md="12">
+          <v-col cols="6" sm="6" md="6">
             <v-img
-              class="mx-auto"
-              :src="
-                editedItem.productPicture ? editedItem.productPicture : null
-              "
+              :src="editedItem.deviceImage ? imagePreview : null"
               height="auto"
-              width="50%"
+              width="7%"
             ></v-img>
+          </v-col>
+          <v-col cols="12" sm="12" md="6">
+            <v-text-field
+              v-model="editedItem.deviceID"
+              label="Mã thiết bị"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="6" sm="12" md="6">
+            <v-text-field
+              v-model="editedItem.deviceName"
+              label="Tên thiết bị"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="12" sm="12" md="12">
+            <v-select
+              v-model="editedItem.categoryId"
+              label="Loại thiết bị"
+              :items="listCategory"
+              :item-text="'name'"
+              :item-value="'id'"
+            >
+            </v-select>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-menu
@@ -56,14 +63,14 @@
                 ></v-text-field>
               </template>
               <v-date-picker
-                v-model="date"
+                v-model="editedItem.createdAt"
                 @input="datepick = false"
               ></v-date-picker>
             </v-menu>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field
-              v-model="editedItem.providerCode"
+              v-model="editedItem.providerID"
               label="Mã nhà cung cấp"
             ></v-text-field>
           </v-col>
@@ -78,111 +85,41 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" text @click="close"> Cancel </v-btn>
+      <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import axios from "axios";
+import Storage from "@/utils/storage";
 export default {
+  props: ["editedItem", "listCategory"],
   data() {
     return {
-      editedIndex: -1,
-      editedItem: {
-        id: this.$route.params.id,
-        productCode: "",
-        productName: "",
-        productPicture: null,
-        productDay: "",
-        providerCode: "",
+      defaultItem: {
+        deviceID: "",
+        deviceName: "",
+        deviceImage: null,
+        createdAt: new Date(Date.now()).toISOString().slice(0, 10),
+        providerID: "",
         provider: "",
+        categoryId: "",
       },
+      date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+        .toISOString()
+        .slice(0, 10),
+      menu: false,
+      modal: false,
+      datepick: false,
+      imagePreview: "",
+      previews: [],
+      errorImage: "url of an image to use to indicate an error",
     };
   },
-  created() {
-    this.initialize();
-    if (this.$route.query.path) this.search == this.$route.query.productName;
-    console.log(this.$route.query.productName);
-  },
-  computed: {
-    formTitle() {
-      return this.editedIndex === -1 ? "Thêm thiết bị" : "Chỉnh sửa thông tin";
-    },
-  },
-  methods: {
-    initialize() {
-      this.items = [
-        {
-          productName: "Máy tính",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Samsung",
-          productCode: "Mr41748",
-        },
-        {
-          productName: "Điện thoại",
-          productPicture:
-            "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
-          provider: "Toshiba",
-          productCode: "Kr1441",
-        },
-        {
-          productName: "Tủ lạnh",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Panasonic",
-          productCode: "Ur214",
-        },
-        {
-          productName: "Bình nóng lạnh",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Tokuda",
-          productCode: "kg352",
-        },
-        {
-          productName: "QUạt điện",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Việt Nam",
-          productCode: "af2214",
-        },
-        {
-          productName: "fakffka",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "fajkfajf",
-          productCode: "kakff42424",
-        },
-        {
-          productName: "fafkffa",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "fakfak",
-          productCode: "iwa214",
-        },
-        {
-          productName: "fajfkja",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "hjisgjg",
-          productCode: "ì3455",
-        },
-        {
-          productName: "gkgkks",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjrirw fjk ",
-          productCode: "owjf32",
-        },
-        {
-          productName: "j jgsjg ",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjg gkgk",
-          productCode: "jjshf3525",
-        },
-        {
-          productName: "à lk gka ",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjg gkgk",
-          productCode: "jjshf3525",
-        },
-      ];
-    },
 
+  methods: {
     // upload image to form
     async selectImage(e) {
       const file = e;
@@ -194,57 +131,50 @@ export default {
           reader.readAsDataURL(f);
         });
       const data = await readData(file);
-      this.editedItem.productPicture = data;
+      this.imagePreview = data;
+      this.editedItem.deviceImage = file.name;
+      console.log(file.name);
     },
-    async clearImagePreview() {
-      this.editedIndex.productPicture = null;
-    },
+    // async clearImagePreview() {
+    //   this.editedIndex.deviceImage = null;
+    // },
+    // async selectImage(event) {
+    //   let file = event.target.files[0];
+    //   if (file) {
+    //     let reader = new FileReader();
+    //     reader.onloadend = () => {
+    //       setImagePreviewUrl(reader.result);
+    //     };
+    //     reader.readAsDataURL(file);
+    //   }
+    //   console.log(file);
+    // },
     close() {
-      this.dialog = false;
-      this.$nextTick(() => {
-        this.editedItem = Object.assign({}, this.defaultItem);
-        this.editedIndex = -1;
-      });
+      this.editedItem.deviceID = "";
+      this.editedItem.deviceImage = null;
+      this.editedItem.deviceName = "";
+      this.editedItem.createdAt = new Date(Date.now())
+        .toISOString()
+        .slice(0, 10);
+      this.editedItem.providerID = "";
+      this.editedItem.provider = "";
+      this.editedItem.categoryId = "";
     },
     save() {
-      if (this.editedIndex > -1) {
-        Object.assign(this.items[this.editedIndex], this.editedItem);
-      } else {
-        this.items.push(this.editedItem);
-      }
+      axios
+        .post("http://localhost:3000/devices", this.editedItem)
+        .then((res) => {
+          if (res.data.id != 0) {
+            this.$router.push("/");
+            console.log(this.editedItem);
+          }
+        });
+
+      //Storage.store("devices", this.items);
       this.close();
-      console.log(this.items);
-    },
-
-    // edit product
-    editItem(item) {
-      this.editedIndex = this.items.indexOf(item);
-      this.editedItem = Object.assign({}, item);
-      this.dialog = true;
-    },
-
-    //delete product
-    deleteItem(item) {
-      this.editedIndex = this.items.indexOf(item);
-      this.editedItem = Object.assign({}, item);
-      this.dialogDelete = true;
-    },
-
-    // form comfirm delete product
-    deleteItemConfirm() {
-      this.items.splice(this.editedIndex, 1);
-      this.closeDelete();
-    },
-    closeDelete() {
-      this.dialogDelete = false;
-      this.$nextTick(() => {
-        this.editedItem = Object.assign({}, this.defaultItem);
-        this.editedIndex = -1;
-      });
     },
   },
 };
 </script>
 
-<style>
-</style>
+<style></style>
