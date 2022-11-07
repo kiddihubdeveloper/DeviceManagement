@@ -16,9 +16,19 @@ const routes = [
                 component: load('HomePage'),
             },
             {
+                path: '/',
+                name: 'Device',
+                component: load('device/DevicePage'),
+            },
+            {
                 path: '/create-device',
-                name: 'CreateDevice',
+                name: 'Create Device',
                 component: load('device/CreateDevice'),
+            },
+            {
+                path: '/edit-device/:id',
+                name: 'Edit Device',
+                component: load('device/EditDevice'),
             },
             {
                 path: '/user',

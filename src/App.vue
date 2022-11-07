@@ -1,7 +1,21 @@
 <template>
   <router-view />
 </template>
+<script>
+import users from "../data/users.json";
+import devices from "../data/devices.json";
 
+import storage from "@/utils/storage.js";
+
+export default {
+  name: "App",
+
+  created() {
+    storage.store("users", users);
+    storage.store("devices", devices);
+  },
+};
+</script>
 <style lang="scss">
 html {
   height: 100%;

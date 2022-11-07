@@ -47,6 +47,7 @@ export default {
   data: () => ({
     drawer: null,
     productList: [
+      { productName: "Trang chu", icon: "mdi-forum", path: "/" },
       {
         productName: "Them thiet bi",
         icon: "mdi-view-dashboard",
