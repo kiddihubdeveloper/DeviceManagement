@@ -1,9 +1,15 @@
 <template>
-  <h2>User</h2>
+  <user-table></user-table>
 </template>
 
 <script>
-export default {};
+import UserTable from "./UserTable.vue";
+export default {
+  name: "UserPage",
+  components: {
+    UserTable,
+  },
+};
 </script>
 
 <style></style>

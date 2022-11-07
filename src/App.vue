@@ -2,6 +2,27 @@
   <router-view />
 </template>
 
+<script>
+
+import Storage from "@/utils/storage.js";
+import Users from "@/assets/data/users.json";
+import Devices from "@/assets/data/devices.json";
+
+export default {
+  name: "App",
+
+  beforeMount(){
+    Storage.store('users', Users)
+    Storage.store('devices', Devices)
+  },
+
+  beforeDestroy() {
+    Storage.wipe();
+  },
+
+};
+</script>
+
 <style lang="scss">
 html {
   height: 100%;
