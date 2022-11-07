@@ -1,18 +1,17 @@
 <template>
   <div>
-    <table-device-vue />
+    <device-page />
   </div>
 </template>
 
 <script>
-import TableDeviceVue from "./device/components/TableDevice.vue";
+import DevicePage from "./device/DevicePage.vue";
 export default {
   name: "HomePage",
   components: {
-    TableDeviceVue,
+    DevicePage,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

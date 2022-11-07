@@ -15,106 +15,13 @@
           <v-toolbar-title>Quản lý thiết bị</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
-          <v-dialog v-model="dialog" max-width="1000px">
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
-                New Item
-                <v-icon>mdi-plus</v-icon>
-              </v-btn>
-            </template>
-            <v-card>
-              <v-card-title>
-                <span class="text-h5">{{ formTitle }}</span>
-              </v-card-title>
-              <v-card-text>
-                <v-container>
-                  <v-row>
-                    <v-col cols="12" sm="6" md="6">
-                      <v-text-field
-                        v-model="editedItem.productCode"
-                        label="Mã thiết bị"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="6">
-                      <v-text-field
-                        v-model="editedItem.productName"
-                        label="Tên thiết bị"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" sm="12" md="12">
-                      <v-file-input
-                        v-model="editedItem.productPicture"
-                        accept="image/png, image/jpeg, image/bmp"
-                        prepend-icon="mdi-camera"
-                        @change="selectImage"
-                        @click:clear="clearImagePreview()"
-                        label="Ảnh thiết bị"
-                        placeholder="Pick an image"
-                      ></v-file-input>
-                    </v-col>
-                    <v-col cols="12" sm="12" md="12">
-                      <v-img
-                        class="mx-auto"
-                        :src="
-                          editedItem.productPicture
-                            ? editedItem.productPicture
-                            : null
-                        "
-                        height="auto"
-                        width="50%"
-                      ></v-img>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                      <v-menu
-                        v-model="datepick"
-                        :close-on-content-click="false"
-                        :nudge-right="40"
-                        transition="scale-transition"
-                        offset-y
-                        min-width="auto"
-                      >
-                        <template v-slot:activator="{ on, attrs }">
-                          <v-text-field
-                            v-model="date"
-                            label="Ngày nhập"
-                            prepend-icon="mdi-calendar"
-                            readonly
-                            v-bind="attrs"
-                            v-on="on"
-                          ></v-text-field>
-                        </template>
-                        <v-date-picker
-                          v-model="date"
-                          @input="datepick = false"
-                        ></v-date-picker>
-                      </v-menu>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                      <v-text-field
-                        v-model="editedItem.providerCode"
-                        label="Mã nhà cung cấp"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                      <v-text-field
-                        v-model="editedItem.provider"
-                        label="Tên nhà cung cấp"
-                      ></v-text-field>
-                    </v-col>
-                  </v-row>
-                </v-container>
-              </v-card-text>
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn color="blue darken-1" text @click="close">
-                  Cancel
-                </v-btn>
-                <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog>
 
-          <v-dialog v-model="dialogDelete" max-width="500px">
+          <v-btn color="primary" dark class="mb-2" :to="'/create-device'">
+            New Item
+            <v-icon>mdi-plus</v-icon>
+          </v-btn>
+
+          <!-- <v-dialog v-model="dialogDelete" max-width="500px">
             <v-card>
               <v-card-title class="text-h5"
                 >Bạn có chắc muốn xóa thiết bị ?</v-card-title
@@ -130,19 +37,18 @@
                 <v-spacer></v-spacer>
               </v-card-actions>
             </v-card>
-          </v-dialog>
+          </v-dialog> -->
         </v-toolbar>
       </template>
-
-      <template v-slot:[`item.index`]="{ index }">
-        {{ index + 1 }}
+      <template v-slot:[`item.id`]="{ item }">
+        {{ item.id }}
       </template>
-      <template v-slot:[`item.productName`]="{ item }">
-        {{ item.productName }}
+      <template v-slot:[`item.deviceName`]="{ item }">
+        {{ item.deviceName }}
       </template>
-      <template v-slot:[`item.productPicture`]="{ item }">
+      <template v-slot:[`item.deviceImage`]="{ item }">
         <img
-          :src="item.productPicture"
+          :src="item.deviceImage"
           alt=""
           width="50"
           height="50"
@@ -150,14 +56,18 @@
         />
       </template>
       <template v-slot:[`item.actions`]="{ item }">
-        <v-icon class="mr-2" @click="editItem(item)"> mdi-pencil </v-icon>
+        <!-- <v-icon class="mr-2" @click="editItem(item)"> mdi-pencil </v-icon> -->
+        <v-btn class="mr-2" icon :to="'/edit-device/' + item.id">
+          <v-icon> mdi-pencil </v-icon>
+        </v-btn>
         <v-icon @click="deleteItem(item)"> mdi-delete </v-icon>
       </template>
     </v-data-table>
   </v-card>
 </template>
-  <script>
+<script>
 export default {
+  props: ["items", "headers"],
   data() {
     return {
       dialog: false,
@@ -167,7 +77,7 @@ export default {
       editedItem: {
         productCode: "",
         productName: "",
-        productPicture: null,
+        productPicture: "",
         productDay: "",
         providerCode: "",
         provider: "",
@@ -180,105 +90,88 @@ export default {
         providerCode: "",
         provider: "",
       },
-      headers: [
-        { text: "STT", align: "start", value: "index", sortable: false },
-        { text: "Mã sản phẩm", value: "productCode" },
-        { text: "Tên thiết bị ", value: "productName" },
-        { text: "Người thuê", value: "productPicture" },
-        { text: "Nhà cung cấp", value: "provider" },
-        { text: "Actions", value: "actions", sortable: false },
-      ],
-      items: [],
-      date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-        .toISOString()
-        .slice(0, 10),
-      menu: false,
-      modal: false,
-      datepick: false,
     };
   },
   created() {
-    this.initialize();
-    if (this.$route.query.path) this.search == this.$route.query.productName;
-    console.log(this.$route.query.productName);
+    // this.initialize();
   },
-  computed: {
-    formTitle() {
-      return this.editedIndex === -1 ? "Thêm thiết bị" : "Chỉnh sửa thông tin";
-    },
-  },
+  computed: {},
   methods: {
-    initialize() {
-      this.items = [
-        {
-          productName: "Máy tính",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Samsung",
-          productCode: "Mr41748",
-        },
-        {
-          productName: "Điện thoại",
-          productPicture:
-            "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
-          provider: "Toshiba",
-          productCode: "Kr1441",
-        },
-        {
-          productName: "Tủ lạnh",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Panasonic",
-          productCode: "Ur214",
-        },
-        {
-          productName: "Bình nóng lạnh",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Tokuda",
-          productCode: "kg352",
-        },
-        {
-          productName: "QUạt điện",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "Việt Nam",
-          productCode: "af2214",
-        },
-        {
-          productName: "fakffka",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "fajkfajf",
-          productCode: "kakff42424",
-        },
-        {
-          productName: "fafkffa",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "fakfak",
-          productCode: "iwa214",
-        },
-        {
-          productName: "fajfkja",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "hjisgjg",
-          productCode: "ì3455",
-        },
-        {
-          productName: "gkgkks",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjrirw fjk ",
-          productCode: "owjf32",
-        },
-        {
-          productName: "j jgsjg ",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjg gkgk",
-          productCode: "jjshf3525",
-        },
-        {
-          productName: "à lk gka ",
-          productPicture: "https://picsum.photos/id/11/500/300",
-          provider: "gjg gkgk",
-          productCode: "jjshf3525",
-        },
-      ];
-    },
+    // initialize() {
+    //   this.items = [
+    //     {
+    //       id: 1,
+    //       productName: "Máy tính",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "Samsung",
+    //       productCode: "Mr41748",
+    //     },
+    //     {
+    //       id: 2,
+    //       productName: "Điện thoại",
+    //       productPicture:
+    //         "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
+    //       provider: "Toshiba",
+    //       productCode: "Kr1441",
+    //     },
+    //     {
+    //       id: 3,
+    //       productName: "Tủ lạnh",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "Panasonic",
+    //       productCode: "Ur214",
+    //     },
+    //     {
+    //       id: 4,
+    //       productName: "Bình nóng lạnh",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "Tokuda",
+    //       productCode: "kg352",
+    //     },
+    //     {
+    //       productName: "QUạt điện",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "Việt Nam",
+    //       productCode: "af2214",
+    //     },
+    //     {
+    //       productName: "fakffka",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "fajkfajf",
+    //       productCode: "kakff42424",
+    //     },
+    //     {
+    //       productName: "fafkffa",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "fakfak",
+    //       productCode: "iwa214",
+    //     },
+    //     {
+    //       productName: "fajfkja",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "hjisgjg",
+    //       productCode: "ì3455",
+    //     },
+    //     {
+    //       productName: "gkgkks",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "gjrirw fjk ",
+    //       productCode: "owjf32",
+    //     },
+    //     {
+    //       productName: "j jgsjg ",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "gjg gkgk",
+    //       productCode: "jjshf3525",
+    //     },
+    //     {
+    //       productName: "à lk gka ",
+    //       productPicture: "https://picsum.photos/id/11/500/300",
+    //       provider: "gjg gkgk",
+    //       productCode: "jjshf3525",
+    //     },
+    //   ];
+    // },
 
     // upload image to form
     async selectImage(e) {
@@ -294,7 +187,7 @@ export default {
       this.editedItem.productPicture = data;
     },
     async clearImagePreview() {
-      this.editedIndex.productPicture = null;
+      this.editedIndex.productPicture = "";
     },
     close() {
       this.dialog = false;

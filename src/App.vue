@@ -1,12 +1,16 @@
 <template>
   <router-view />
 </template>
+<script>
+import users from "../data/users.json";
+import devices from "../data/devices.json";
 
 <script>
 
 import Storage from "@/utils/storage.js";
 import Users from "@/assets/data/users.json";
 import Devices from "@/assets/data/devices.json";
+
 
 export default {
   name: "App",

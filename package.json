@@ -4,13 +4,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "json-server --watch db.json"
   },
   "license": "MIT",
   "dependencies": {
     "@vue/composition-api": "^1.7.1",
+    "axios": "^1.1.3",
+    "json": "^11.0.0",
     "material-design-icons": "^3.0.1",
     "nanoid": "^4.0.0",
+    "server": "^1.0.37",
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-vue2": "^1.4.0",
     "vue": "^2.6.12",
