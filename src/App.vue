@@ -5,17 +5,28 @@
 import users from "../data/users.json";
 import devices from "../data/devices.json";
 
-import storage from "@/utils/storage.js";
+<script>
+
+import Storage from "@/utils/storage.js";
+import Users from "@/assets/data/users.json";
+import Devices from "@/assets/data/devices.json";
+
 
 export default {
   name: "App",
 
-  created() {
-    storage.store("users", users);
-    storage.store("devices", devices);
+  beforeMount(){
+    Storage.store('users', Users)
+    Storage.store('devices', Devices)
   },
+
+  beforeDestroy() {
+    Storage.wipe();
+  },
+
 };
 </script>
+
 <style lang="scss">
 html {
   height: 100%;
