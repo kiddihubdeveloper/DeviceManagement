@@ -1,30 +1,13 @@
 <template>
-  <router-view />
+  <router-view/>
 </template>
-<script>
-import users from "../data/users.json";
-import devices from "../data/devices.json";
 
 <script>
-
-import Storage from "@/utils/storage.js";
-import Users from "@/assets/data/users.json";
-import Devices from "@/assets/data/devices.json";
-
 
 export default {
   name: "App",
+}
 
-  beforeMount(){
-    Storage.store('users', Users)
-    Storage.store('devices', Devices)
-  },
-
-  beforeDestroy() {
-    Storage.wipe();
-  },
-
-};
 </script>
 
 <style lang="scss">
@@ -35,6 +18,7 @@ html {
 body {
   min-height: 100%;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

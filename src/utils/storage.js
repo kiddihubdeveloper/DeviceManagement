@@ -1,4 +1,6 @@
-const Storage = {
+import jsonfile from 'jsonfile';
+
+export default {
     /**
      * Lấy giá trị của key trong localStorage
      * @param {string} key
@@ -20,6 +22,18 @@ const Storage = {
     },
 
     /**
+     * Lưu dữ liệu devices vào file json
+     * @param {*} devices: dữ liệu thiết bị
+     **/
+    updateDevices(devices) {
+        jsonfile.writeFile('devices.json', JSON.stringify(devices))
+            .then(() => {
+                console.log('saved');
+            })
+            .catch(error => console.error(error))
+    },
+
+    /**
      * Xoá dữ liệu trong localStorage theo key
      * @param {string} key
      **/
@@ -34,5 +48,3 @@ const Storage = {
         window.localStorage.clear();
     }
 }
-
-export default Storage;

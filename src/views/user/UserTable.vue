@@ -27,10 +27,9 @@
         <v-tooltip bottom>
           <template #activator="{ on, attrs }">
             <v-icon
-                v-bind="attrs"
-                @click="deleteItem(item)"
-                v-on="on"
                 class="mr-3"
+                v-bind="attrs"
+                v-on="on"
             >
               mdi-cash-multiple
             </v-icon>
@@ -55,7 +54,8 @@
 </template>
 
 <script>
-import Storage from '@/utils/storage.js';
+
+import Users from '@/repositories/entities/UserRepository'
 
 export default {
   name: 'UserTable',
@@ -69,15 +69,34 @@ export default {
         {text: 'Ảnh đại diện', value: 'avatar', sortable: false},
         {text: "Hành động", value: "actions", sortable: false},
       ],
-      users: Storage.get('users'),
+      users: []
     }
   },
+
+  beforeMount() {
+    Users.getAll()
+        .then(response => {
+          this.users = response.data
+        })
+        .catch(error => {
+          console.error(error)
+        })
+  },
+
   methods: {
 
     //delete user
     deleteItem(item) {
-      let index = this.users.indexOf(item);
-      confirm('Are you sure you want to delete this user?') && this.users.splice(index, 1);
+
+      if (confirm('Are you sure you want to delete this user?')){
+        Users.deleteItem(item.id)
+            .then(response => {
+              this.users = this.users.filter(user => user.id !== item.id)
+            })
+            .catch(error => {
+              console.error(error)
+            })
+      }
     },
 
   }
