@@ -13,6 +13,7 @@
         :headers="headers"
         :items="users"
         :search="search"
+        loading-text="Đang load dữ liệu...Vui lòng chờ một lát"
     >
       <template #item.avatar="{ item }">
         <img
@@ -25,15 +26,6 @@
       </template>
       <template #item.actions="{ item }">
         <v-tooltip bottom>
-          <template #activator="{ on, attrs }">
-            <v-icon
-                class="mr-3"
-                v-bind="attrs"
-                v-on="on"
-            >
-              mdi-cash-multiple
-            </v-icon>
-          </template>
           <span>Mượn</span>
         </v-tooltip>
         <v-tooltip bottom>
@@ -49,6 +41,9 @@
           <span>Xoá</span>
         </v-tooltip>
       </template>
+      <template #item.role="{ item }">
+        {{ userRole[item.role] }}
+      </template>
     </v-data-table>
   </v-card>
 </template>
@@ -56,6 +51,7 @@
 <script>
 
 import Users from '@/repositories/entities/UserRepository'
+import Swal from "sweetalert2";
 
 export default {
   name: 'UserTable',
@@ -63,14 +59,20 @@ export default {
     return {
       search: '',
       headers: [
-        {text: 'Mã người dùng', value: 'id'},
+        {text: 'Mã', value: 'id'},
         {text: 'Tên người dùng', value: 'username'},
-        {text: 'Email', value: 'email'},
-        {text: 'Ảnh đại diện', value: 'avatar', sortable: false},
-        {text: "Hành động", value: "actions", sortable: false},
+        {text: 'Email', value: 'email', sortable: false},
+        {text: 'Ảnh đại diện', value: 'avatar', sortable: false, align: 'center'},
+        {text: 'Vị trí', value: 'role'},
+        {text: 'Số thiết bị đã cung cấp', value: 'number_of_devices_provided', align: 'center'},
+        {text: 'Số thiết bị đang mượn', value: 'number_of_devices_borrowed', align: 'center'},
+        {text: "Hành động", value: "actions", sortable: false, align: 'center'},
       ],
       users: [],
-      reloadPage: false,
+      userRole: {
+        0: 'User',
+        1: 'Admin'
+      },
     }
   },
 
@@ -81,7 +83,6 @@ export default {
       Users.getAll()
           .then(response => {
             this.users = response.data
-            console.log(this.users)
           })
           .catch(error => {
             console.error(error)
@@ -91,12 +92,36 @@ export default {
     //delete user
     deleteItem(item) {
 
-      if (confirm('Are you sure you want to delete this user?')) {
-        Users.deleteItem(item.id)
-            .then(() => {
-              this.getData()
-            })
-      }
+      Swal.fire({
+        title: 'Chắc chưa?',
+        text: "Không thể khôi phục dữ liệu đã xoá!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Đồng ý!',
+        cancelButtonText: 'Hủy'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+              {
+                icon: 'success',
+                title: 'Đã xoá!',
+                text: 'Người dùng đã được xoá.',
+                showConfirmButton: false,
+                timer: 1200,
+                timerProgressBar: true,
+              }
+          )
+          Users.deleteItem(item.id)
+              .then(() => {
+                this.getData()
+              })
+              .catch(error => {
+                console.error(error)
+              })
+        }
+      })
     }
   },
 
@@ -109,4 +134,5 @@ export default {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
