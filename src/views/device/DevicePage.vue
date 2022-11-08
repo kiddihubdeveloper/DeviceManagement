@@ -15,7 +15,6 @@ export default {
       dialog: false,
       dialogDelete: false,
       search: "",
-      editedIndex: -1,
       editedItem: {
         productCode: "",
         productName: "",
@@ -48,11 +47,11 @@ export default {
   },
   created() {
     //this.items = Storage.get("devices");
-    this.getCountries();
+    this.getDevices();
   },
   computed: {},
   methods: {
-    async getCountries() {
+    async getDevices() {
       return axios
         .get("http://localhost:3000/devices")
         .then((response) => {

@@ -31,6 +31,11 @@ const routes = [
                 component: load('device/EditDevice'),
             },
             {
+                path: '/search/:keyString',
+                name: 'Key Search',
+                component: load('device/DevicePage'),
+            },
+            {
                 path: '/user',
                 name: 'user',
                 component: load('user/UserPage'),
