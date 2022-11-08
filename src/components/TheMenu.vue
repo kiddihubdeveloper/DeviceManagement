@@ -54,9 +54,10 @@ export default {
         path: "/create-device",
       },
       { productName: "Nguoi dung", icon: "mdi-forum", path: "/user" },
-      { productName: "Máy giặt", icon: "mdi-forum", path: "" },
-      { productName: "Tủ lạnh", icon: "mdi-forum", path: "" },
-      { productName: "Máy tính", icon: "mdi-forum", path: "" },
+      { productName: "Laptop", icon: "mdi-laptop", path: "/laptop" },
+      { productName: "Keyboard", icon: "mdi-keyboard", path: "/keyboard" },
+      { productName: "Mouse", icon: "mdi-mouse", path: "/mouse" },
+      { productName: "Screen", icon: "mdi-wiper", path: "/screen" },
     ],
   }),
 };

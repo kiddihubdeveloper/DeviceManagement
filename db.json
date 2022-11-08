@@ -1,19 +1,19 @@
 {
   "deviceCategories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "laptop"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "keyboard"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "mouse"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "screen"
     }
   ],
@@ -1092,7 +1092,7 @@
     },
     {
       "id": "2160",
-      "deviceName": "Lenovo Yoga Slim 7 Pro 14IHU5",
+      "deviceName": "Lenovo Yoga Slim 7 Pro 14IHU",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/1/lenovo-yoga-slim-7-pro-14ihu5-thinkpro-01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "13/09/2022",
@@ -2427,22 +2427,6 @@
       "categoryId": "3"
     },
     {
-      "id": "416",
-      "deviceName": "Chuột Logitech G703 HERO LIGHTPSEED Wireless Gaming",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g703-01jpg?w=500&h=500",
-      "providerID": 17879,
-      "createdAt": "15/06/2022",
-      "categoryId": "3"
-    },
-    {
-      "id": "415",
-      "deviceName": "Chuột Logitech G304  LIGHTSPEED Wireless",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g304-01jpg?w=500&h=500",
-      "providerID": 17875,
-      "createdAt": "22/05/2022",
-      "categoryId": "3"
-    },
-    {
       "id": "412",
       "deviceName": "Chuột Logitech M185",
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/m185-01jpg?w=500&h=500",
@@ -2899,14 +2883,6 @@
       "categoryId": "4"
     },
     {
-      "id": "2107",
-      "deviceName": "Màn hình di động Viewsonic VG1655",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-VG1655-ThinkPro-01.jpg?w=500&h=500",
-      "providerID": 17882,
-      "createdAt": "12/01/2022",
-      "categoryId": "4"
-    },
-    {
       "id": "2106",
       "deviceName": "Màn hình cảm ứng Viewsonic TD1655",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-TD1655-ThinkPro-1.jpg?w=500&h=500",
@@ -3281,6 +3257,36 @@
       "providerID": 17889,
       "createdAt": "01/04/2022",
       "categoryId": "4"
+    },
+    {
+      "id": 2161,
+      "deviceID": "faf3424",
+      "deviceName": "doan xem",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
+      "createdAt": "20/2-/1-09",
+      "providerID": "đâf",
+      "provider": "fafa",
+      "categoryId": "2"
+    },
+    {
+      "id": 2162,
+      "deviceID": "faf342",
+      "deviceName": "doan xemm",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
+      "createdAt": "21/10/2022",
+      "providerID": "đa",
+      "provider": "fafa",
+      "categoryId": "4"
+    },
+    {
+      "id": 2163,
+      "deviceID": "fafaf",
+      "deviceName": "don xem",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
+      "createdAt": "2022-11-08",
+      "providerID": "faff",
+      "provider": "faff",
+      "categoryId": "1"
     }
   ],
   "users": [
