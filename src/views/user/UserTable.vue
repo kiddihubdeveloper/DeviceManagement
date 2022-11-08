@@ -69,38 +69,44 @@ export default {
         {text: 'Ảnh đại diện', value: 'avatar', sortable: false},
         {text: "Hành động", value: "actions", sortable: false},
       ],
-      users: []
+      users: [],
+      reloadPage: false,
     }
-  },
-
-  beforeMount() {
-    Users.getAll()
-        .then(response => {
-          this.users = response.data
-        })
-        .catch(error => {
-          console.error(error)
-        })
   },
 
   methods: {
 
+    // get data user
+    getData() {
+      Users.getAll()
+          .then(response => {
+            this.users = response.data
+            console.log(this.users)
+          })
+          .catch(error => {
+            console.error(error)
+          })
+    },
+
     //delete user
     deleteItem(item) {
 
-      if (confirm('Are you sure you want to delete this user?')){
+      if (confirm('Are you sure you want to delete this user?')) {
         Users.deleteItem(item.id)
-            .then(response => {
-              this.users = this.users.filter(user => user.id !== item.id)
-            })
-            .catch(error => {
-              console.error(error)
+            .then(() => {
+              this.getData()
             })
       }
-    },
+    }
+  },
 
+  beforeMount() {
+    this.getData()
   }
-};
+
+}
+
+
 </script>
 
 <style lang="scss" scoped></style>
