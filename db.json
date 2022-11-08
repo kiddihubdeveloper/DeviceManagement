@@ -3287,6 +3287,9 @@
     {
       "id": 17874,
       "provider_user_id": 17874,
+      "role": "1",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 3,
       "provider": "KIDDIHUB",
       "username": "0123456789",
       "email": "tranvieth22t@gmail.com",
@@ -3299,6 +3302,9 @@
     {
       "id": 17875,
       "provider_user_id": 17875,
+      "role": "1",
+      "number_of_devices_borrowed": 3,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "wa6qnmIwCEc0FcJc",
       "email": "Lannt+3@hblab.vn",
@@ -3309,8 +3315,26 @@
       "phone": "NULL"
     },
     {
+      "id": 17876,
+      "provider_user_id": 17876,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
+      "provider": "KIDDIHUB",
+      "username": "9Xsa3b11mOgNBNxH",
+      "email": "pauldaiviet+1@gmail.com",
+      "password": "$2y$10$DG3DetPP3qqEPZIEwMmngOaJ9tgXd.U8vEq3mVgGwtXT1.CkB2HBy",
+      "avatar": "https://ui-avatars.com/api/?name=9Xsa3b11mOgNBNxH&background=0D8ABC&color=f8f9fa&size=99",
+      "created_at": "2022-10-24 11:23:40",
+      "updated_at": "2022-10-24 11:23:40",
+      "phone": "NULL"
+    },
+    {
       "id": 17877,
       "provider_user_id": 17877,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "8t9oO0Zs7qkkPao5",
       "email": "pauldaiviet+5@gmail.com",
@@ -3323,6 +3347,9 @@
     {
       "id": 17878,
       "provider_user_id": 17878,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "6r4MO94METev77sy",
       "email": "pauldaiviet+22@gmail.com",
@@ -3335,6 +3362,9 @@
     {
       "id": 17879,
       "provider_user_id": 17879,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "tXKOK2ffmvzOL657",
       "email": "pauldaiviet+111111@gmail.com",
@@ -3347,6 +3377,9 @@
     {
       "id": 17880,
       "provider_user_id": 17880,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "9qQQFdbiAltaYWUk",
       "email": "pauldaiviet+11@gmail.com",
@@ -3357,8 +3390,26 @@
       "phone": "NULL"
     },
     {
+      "id": 17881,
+      "provider_user_id": 17881,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
+      "provider": "KIDDIHUB",
+      "username": "OBuTsEHs7uQ7Cq8N",
+      "email": "pauldaiviet+1111@gmail.com",
+      "password": "$2y$10$B3Ij5cg1W4.IIzJoEIrSYu5bnFi2y6JIiyNJvVl3E1.f3FtSzVNs.",
+      "avatar": "https://ui-avatars.com/api/?name=OBuTsEHs7uQ7Cq8N&background=21ba45&color=f8f9fa&size=99",
+      "created_at": "2022-10-25 10:58:36",
+      "updated_at": "2022-10-25 10:58:36",
+      "phone": "NULL"
+    },
+    {
       "id": 17882,
       "provider_user_id": 17882,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "m61UsV1qgeVz1Vsk",
       "email": "pauldaiviet+111@gmail.com",
@@ -3371,6 +3422,9 @@
     {
       "id": 17883,
       "provider_user_id": 17883,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "V1LviFPIVRy87JZK",
       "email": "pauldaiviet+11122@gmail.com",
@@ -3383,6 +3437,9 @@
     {
       "id": 17884,
       "provider_user_id": 17884,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "GEYYo1u9cdGT8i7H",
       "email": "pauldaiviet+01@gmail.com",
@@ -3395,6 +3452,9 @@
     {
       "id": 17885,
       "provider_user_id": 17885,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "ZptG271o1sgAaQp5",
       "email": "pauldaiviet+02@gmail.com",
@@ -3407,6 +3467,9 @@
     {
       "id": 17886,
       "provider_user_id": 17886,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "facebook",
       "username": "phuongke20",
       "email": "phuognke20@gmail.com",
@@ -3419,6 +3482,9 @@
     {
       "id": 17887,
       "provider_user_id": 17887,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "facebook",
       "username": "phuongke2001",
       "email": "phuongke2001@gmail.com",
@@ -3431,6 +3497,9 @@
     {
       "id": 17888,
       "provider_user_id": 17888,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "dT87JT6WMH4pwtmb",
       "email": "pauldaiviet+022@gmail.com",
@@ -3443,6 +3512,9 @@
     {
       "id": 17889,
       "provider_user_id": 17889,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "1rg3IzoLtd8ohlEq",
       "email": "quangson91+m1000@gmail.com",
@@ -3455,6 +3527,9 @@
     {
       "id": 17890,
       "provider_user_id": 17890,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "2KDZG6HKUFJvQNG1",
       "email": "quangson91+m1001@gmail.com",
@@ -3467,6 +3542,9 @@
     {
       "id": 17891,
       "provider_user_id": 17891,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "mmfXvnOdTYBWhUXU",
       "email": "quangson91+m1002@gmail.com",
@@ -3479,6 +3557,9 @@
     {
       "id": 17892,
       "provider_user_id": 17892,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "xHaKdZtZC2UsjDQw",
       "email": "pauldaiviet+022111@gmail.com",
@@ -3491,6 +3572,9 @@
     {
       "id": 17893,
       "provider_user_id": 17893,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "HYZ3sC8ebpHE7j0o",
       "email": "pauldaiviet+022111111111@gmail.com",
@@ -3503,6 +3587,9 @@
     {
       "id": 17894,
       "provider_user_id": 17894,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "ObBlgXRdWfN1jK7p",
       "email": "pauldaiviet+12@gmail.com",
@@ -3515,6 +3602,9 @@
     {
       "id": 17895,
       "provider_user_id": 17895,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "BfE8lnxbqYXo7h45",
       "email": "pauldaiviet+113@gmail.com",
@@ -3527,6 +3617,9 @@
     {
       "id": 17896,
       "provider_user_id": 17896,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "7936YDXhrvR66fok",
       "email": "btsvcdvht@gmail.com",
@@ -3539,6 +3632,9 @@
     {
       "id": 17897,
       "provider_user_id": 17897,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "vMUMeSDVR6T5Pj5Y",
       "email": "quangson91+m1009@gmail.com",
@@ -3551,6 +3647,9 @@
     {
       "id": 17898,
       "provider_user_id": 17898,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "NHx6zq7sB63s2HRz",
       "email": "quangson91+m1019@gmail.com",
@@ -3563,6 +3662,9 @@
     {
       "id": 17899,
       "provider_user_id": 17899,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "8aeONX6SRufoR3CX",
       "email": "lannt+1@hblab.vn",
@@ -3575,6 +3677,9 @@
     {
       "id": 17900,
       "provider_user_id": 17900,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "1hrZuK3iW7spE7mQ",
       "email": "nguyenlan01091997@gmail.com",
@@ -3587,6 +3692,9 @@
     {
       "id": 17901,
       "provider_user_id": 17901,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "hHzeY9LVTyncG0yy",
       "email": "NULL",
@@ -3599,6 +3707,9 @@
     {
       "id": 17902,
       "provider_user_id": 17902,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "fzIMvrOWfgHb20AF",
       "email": "tranvieth2t+30@gmail.com",
@@ -3611,6 +3722,9 @@
     {
       "id": 17903,
       "provider_user_id": 17903,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "Ecu2nRKfNZbqkXpG",
       "email": "quangson91+m109@gmail.com",
@@ -3623,6 +3737,9 @@
     {
       "id": 17904,
       "provider_user_id": 17904,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "C3knGsAkfou4eVvk",
       "email": "btsvcdvht+1@gmail.com",
@@ -3635,6 +3752,9 @@
     {
       "id": 17905,
       "provider_user_id": 17905,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "JjUMr59T965kaOy7",
       "email": "btsvcdvht+10@gmail.com",
@@ -3647,6 +3767,9 @@
     {
       "id": 17906,
       "provider_user_id": 17906,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "0y3xVjfN4RalATXy",
       "email": "Lannt+13@hblab.vn",
@@ -3659,6 +3782,9 @@
     {
       "id": 17907,
       "provider_user_id": 17907,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "hUjVraG8IWx3CESa",
       "email": "quangson91+m2211011@gmail.com",
@@ -3671,6 +3797,9 @@
     {
       "id": 17908,
       "provider_user_id": 17908,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "TzIdho9Xghpzz24Z",
       "email": "Lannt+88@hblab.vn",
@@ -3683,6 +3812,9 @@
     {
       "id": 17909,
       "provider_user_id": 17909,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "tFeGZmE39EENaWtR",
       "email": "lannt+89@hblab.vn",
@@ -3695,6 +3827,9 @@
     {
       "id": 17910,
       "provider_user_id": 17910,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "5aegbfryPjiMLE4I",
       "email": "sondq+99@gmail.com",
@@ -3707,6 +3842,9 @@
     {
       "id": 17911,
       "provider_user_id": 17911,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "8AF3oubQI9oaomg0",
       "email": "sondq+100@gmail.com",
@@ -3719,6 +3857,9 @@
     {
       "id": 17912,
       "provider_user_id": 17912,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "ikqCKZ7JopQwjsve",
       "email": "lannt+77@hblab.vn",
@@ -3731,6 +3872,9 @@
     {
       "id": 17913,
       "provider_user_id": 17913,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "lLTLUyybGwEBIkyG",
       "email": "lannt@hblab.vn",
@@ -3743,6 +3887,9 @@
     {
       "id": 17914,
       "provider_user_id": 17914,
+      "role": "0",
+      "number_of_devices_borrowed": 0,
+      "number_of_devices_provided": 1,
       "provider": "KIDDIHUB",
       "username": "mUjHd0qXgO96r8A6",
       "email": "btsvcdvht+101@gmail.com",
