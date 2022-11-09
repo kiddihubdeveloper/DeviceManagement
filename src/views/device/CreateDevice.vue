@@ -30,6 +30,7 @@ export default {
         providerID: "",
         provider: "",
         categoryId: "",
+        status: "2",
       },
       listCategory: [],
     };

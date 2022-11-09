@@ -9,7 +9,12 @@
         hide-details
       ></v-text-field>
     </v-card-title>
-    <v-data-table :headers="headers" :items="items" :search="search">
+    <v-data-table
+      :headers="headers"
+      :items="items"
+      :search="search"
+      show-select
+    >
       <template v-slot:top>
         <v-toolbar flat>
           <v-toolbar-title>Quản lý thiết bị</v-toolbar-title>
