@@ -20,22 +20,13 @@ export default {
   },
   data() {
     return {
-      search: "",
-      editedItem: {
-        productCode: "",
-        productName: "",
-        productPicture: "",
-        productDay: "",
-        providerCode: "",
-        provider: "",
-      },
-
       headers: [
         { text: "ID", align: "start", value: "id" },
         // { text: "Mã sản phẩm", value: "productCode" },
         { text: "Tên thiết bị ", value: "deviceName" },
         { text: "Ảnh thiết bị", value: "deviceImage" },
         { text: "Nhà cung cấp", value: "providerID" },
+        { text: "Loại thiết bị", value: "categoryId" },
         { text: "Actions", value: "actions", sortable: false },
       ],
       items: [],
@@ -49,6 +40,7 @@ export default {
   },
   computed: {},
   methods: {
+    // get list of devices
     async getDevices() {
       return axios
         .get("http://localhost:3000/devices")
@@ -60,6 +52,8 @@ export default {
           throw error.response.data;
         });
     },
+
+    // get list of devices by status
     getDeviceByStatus() {
       this.items = [];
       axios
