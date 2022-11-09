@@ -1,5 +1,5 @@
 <template>
-  <v-card color="grey lighten-4">
+  <v-card color="grey ">
     <v-toolbar dense>
       <v-toolbar-title>Device Management System</v-toolbar-title>
 
@@ -7,7 +7,7 @@
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-toolbar>
-    <v-navigation-drawer v-model="drawer" fixed temporary>
+    <v-navigation-drawer v-model="drawer" fixed temporary width="330px">
       <v-list-item>
         <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
@@ -25,7 +25,7 @@
           v-for="item in productList"
           :key="item.productName"
           link
-          :to="item.path"
+          :to="{ path: item.path, query: item.query }"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -54,12 +54,37 @@ export default {
         path: "/create-device",
       },
       { productName: "Nguoi dung", icon: "mdi-forum", path: "/user" },
-      { productName: "Laptop", icon: "mdi-laptop", path: "/laptop" },
-      { productName: "Keyboard", icon: "mdi-keyboard", path: "/keyboard" },
-      { productName: "Mouse", icon: "mdi-mouse", path: "/mouse" },
-      { productName: "Screen", icon: "mdi-wiper", path: "/screen" },
+      {
+        productName: "Laptop",
+        icon: "mdi-laptop",
+        path: "/search",
+        query: { deviceName: "laptop" },
+      },
+      {
+        productName: "Keyboard",
+        icon: "mdi-keyboard",
+        path: "/search",
+        query: { deviceName: "keyboard" },
+      },
+      {
+        productName: "Mouse",
+        icon: "mdi-mouse",
+        path: "/search",
+        query: { deviceName: "mouse" },
+      },
+      {
+        productName: "Screen",
+        icon: "mdi-wiper",
+        path: "/search",
+        query: { deviceName: "screen" },
+      },
     ],
   }),
+  methods: {
+    reloadPage() {
+      window.location.reload();
+    },
+  },
 };
 </script>
 

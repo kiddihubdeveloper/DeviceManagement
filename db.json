@@ -23,7 +23,7 @@
       "deviceName": "HP Envy 15 X360",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
       "providerID": 17888,
-      "createdAt": "21/10/2022",
+      "createdAt": "2022-02-15",
       "categoryId": "1",
       "status": "1"
     },
@@ -41,7 +41,7 @@
       "deviceName": "Dell Latitude 7320 Detachable",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/6/DELL-Latitude-7320-Detachable-H2.jpeg?w=500&h=500",
       "providerID": 17876,
-      "createdAt": "21/03/2022",
+      "createdAt": "2022-02-12",
       "categoryId": "1",
       "status": "2"
     },
@@ -86,7 +86,7 @@
       "deviceName": "Lenovo ThinkPad P1 Gen 2",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Lenovo-ThinkPad-P1-Gen-2-thinkpro-03.jpg?w=500&h=500",
       "providerID": 17876,
-      "createdAt": "26/06/2022",
+      "createdAt": "2021-10-11",
       "categoryId": "1",
       "status": "1"
     },
@@ -96,33 +96,6 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/5/laptop-lg-gram-17-2021-7.jpeg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "20/06/2022",
-      "categoryId": "1",
-      "status": "1"
-    },
-    {
-      "id": "1718",
-      "deviceName": "Dell Inspiron 14 Plus (7420)",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/2/dell-inspiron-14-7420-thinkpro-1.jpg?w=500&h=500",
-      "providerID": 17874,
-      "createdAt": "13/03/2022",
-      "categoryId": "1",
-      "status": "1"
-    },
-    {
-      "id": "1602",
-      "deviceName": "HP ProBook 440 G8",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/hp-probook-440-g8-thinkpro-01.jpg?w=500&h=500",
-      "providerID": 17888,
-      "createdAt": "12/06/2022",
-      "categoryId": "1",
-      "status": "1"
-    },
-    {
-      "id": "1715",
-      "deviceName": "Dell Inspiron 14 7420 2 in 1",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/dell-inspiron-147420-2-in-1-thinkpro-1.png?w=500&h=500",
-      "providerID": 17887,
-      "createdAt": "11/03/2022",
       "categoryId": "1",
       "status": "1"
     },
@@ -1212,15 +1185,6 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/3/pavi14g11gold-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "10/06/2022",
-      "categoryId": "1",
-      "status": "1"
-    },
-    {
-      "id": "2122",
-      "deviceName": "MSI Modern 14 C5M",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/2/msi-modern-14-c5m-thinkpro-01 (1).png?w=500&h=500",
-      "providerID": 17887,
-      "createdAt": "17/09/2022",
       "categoryId": "1",
       "status": "1"
     },
@@ -2593,15 +2557,6 @@
       "status": "1"
     },
     {
-      "id": "1159",
-      "deviceName": "Chuột MSI gaming M88",
-      "deviceImage": "/_nuxt/img/fallback-image.4d0336f.png",
-      "providerID": 17877,
-      "createdAt": "28/06/2022",
-      "categoryId": "3",
-      "status": "1"
-    },
-    {
       "id": "1133",
       "deviceName": "Chuột Razer Basilisk Ultimate",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Basilisk Ultimate_01.jpg?w=500&h=500",
@@ -3661,39 +3616,6 @@
       "providerID": 17889,
       "createdAt": "01/04/2022",
       "categoryId": "4",
-      "status": "1"
-    },
-    {
-      "id": 2161,
-      "deviceID": "faf3424",
-      "deviceName": "doan xem",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
-      "createdAt": "20/2-/1-09",
-      "providerID": "đâf",
-      "provider": "fafa",
-      "categoryId": "2",
-      "status": "1"
-    },
-    {
-      "id": 2162,
-      "deviceID": "faf342",
-      "deviceName": "doan xemm",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
-      "createdAt": "21/10/2022",
-      "providerID": "đa",
-      "provider": "fafa",
-      "categoryId": "4",
-      "status": "1"
-    },
-    {
-      "id": 2163,
-      "deviceID": "fafaf",
-      "deviceName": "don xem",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
-      "createdAt": "2022-11-08",
-      "providerID": "faff",
-      "provider": "faff",
-      "categoryId": "1",
       "status": "1"
     }
   ],

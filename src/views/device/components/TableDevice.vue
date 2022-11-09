@@ -13,6 +13,7 @@
       :headers="headers"
       :items="items"
       :search="search"
+      :custom-filter="customSearch"
       show-select
     >
       <template v-slot:top>
@@ -25,8 +26,26 @@
             New Item
             <v-icon>mdi-plus</v-icon>
           </v-btn>
+          <v-dialog v-model="dialogDelete" max-width="500px">
+            <v-card>
+              <v-card-title class="text-h5"
+                >Bạn có chắc muốn xóa thiết bị ?</v-card-title
+              >
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="blue darken-1" text @click="dialogDelete = false"
+                  >Cancel</v-btn
+                >
+                <v-btn color="blue darken-1" text @click="deleteItemConfirm"
+                  >OK</v-btn
+                >
+                <v-spacer></v-spacer>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </v-toolbar>
       </template>
+
       <template v-slot:[`item.id`]="{ item }">
         {{ item.id }}
       </template>
@@ -42,33 +61,26 @@
           class="mt-2"
         />
       </template>
+
+      <template v-slot:[`item.categoryId`]="{ item }">
+        {{ listCategory[item.categoryId - 1].name }}
+      </template>
       <template v-slot:[`item.actions`]="{ item }">
         <v-btn class="mr-2" icon :to="'/edit-device/' + item.id">
           <v-icon> mdi-pencil </v-icon>
         </v-btn>
-        <v-icon @click="deleteItem()"> mdi-delete </v-icon>
-        <v-dialog v-model="dialogDelete" max-width="500px">
-          <v-card>
-            <v-card-title class="text-h5"
-              >Bạn có chắc muốn xóa thiết bị ?</v-card-title
-            >
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="blue darken-1" text @click="closeDelete()"
-                >Cancel</v-btn
-              >
-              <v-btn
-                color="blue darken-1"
-                text
-                @click="deleteItemConfirm(item.id)"
-                >OK</v-btn
-              >
-              <v-spacer></v-spacer>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
+        <v-icon @click="deleteItem(item.id)"> mdi-delete </v-icon>
       </template>
     </v-data-table>
+    <v-snackbar v-model="snackbar" color="success">
+      Bạn đã xóa thành công
+
+      <template v-slot:action="{ attrs }">
+        <v-btn color="white" text v-bind="attrs" @click="snackbar = false">
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-card>
 </template>
 <script>
@@ -79,27 +91,58 @@ export default {
     return {
       dialogDelete: false,
       search: "",
+      listCategory: [],
+      id: "",
+      snackbar: false,
     };
   },
-  created() {},
+  created() {
+    if (this.$route.query.deviceName) {
+      this.search = this.$route.query.deviceName;
+    } else {
+      this.search = "";
+    }
+    this.getCategories();
+  },
   computed: {},
   methods: {
     //delete product
-    deleteItem() {
+    deleteItem(id) {
       this.dialogDelete = true;
+      this.id = id;
+      console.log(this.id);
     },
 
     // form comfirm delete product
-    deleteItemConfirm(id) {
-      axios.delete(`http://localhost:3000/devices/${id}`).then(() => {
-        console.log("da xoa: " + id);
-      });
-      this.closeDelete();
-      this.items = this.items.filter((device) => device.id != id);
+    deleteItemConfirm() {
+      if (this.id != "") {
+        axios.delete(`http://localhost:3000/devices/${this.id}`);
+        this.snackbar = true;
+        this.items = this.items.filter((device) => device.id != this.id);
+        this.closeDelete();
+      }
     },
     closeDelete() {
       this.dialogDelete = false;
+      this.id = "";
       // this.$router.back();
+    },
+    getCategories() {
+      axios.get("http://localhost:3000/deviceCategories").then((res) => {
+        this.listCategory = res.data;
+      });
+    },
+    customSearch(value, search, item) {
+      if (Array.isArray(value)) {
+        return value.some((item) =>
+          Object.values(item).some(
+            (v) => v && v.toString().toLowerCase().includes(search)
+          )
+        );
+      }
+      return Object.values(item).some(
+        (v) => v && v.toString().toLowerCase().includes(search)
+      );
     },
   },
 };

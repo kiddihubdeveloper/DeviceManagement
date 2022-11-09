@@ -44,6 +44,7 @@
             <v-text-field
               v-model="editedItem.deviceName"
               label="Tên thiết bị"
+              :rules="[(v) => !!v || ' Vui lòng điền tên thiết bị']"
             ></v-text-field>
           </v-col>
           <v-col cols="12" sm="12" md="12">
@@ -53,6 +54,7 @@
               :items="listCategory"
               :item-text="'name'"
               :item-value="'id'"
+              :rules="[(v) => !!v || ' Vui lòng điền loại thiết bị']"
             >
             </v-select>
           </v-col>
@@ -86,12 +88,14 @@
             <v-text-field
               v-model="editedItem.providerID"
               label="Mã nhà cung cấp"
+              :rules="[(v) => !!v || ' Vui lòng điền mã nhà cung cấp']"
             ></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field
               v-model="editedItem.provider"
               label="Tên nhà cung cấp"
+              :rules="[(v) => !!v || ' Vui lòng điền tên nhà cung cấp']"
             ></v-text-field>
           </v-col>
         </v-row>
@@ -101,13 +105,21 @@
       <v-spacer></v-spacer>
       <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
+      <v-snackbar v-model="snackbar">
+        Vui lòng điền đầy đủ trường bắt buộc
+
+        <template v-slot:action="{ attrs }">
+          <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
+            Close
+          </v-btn>
+        </template>
+      </v-snackbar>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
 import axios from "axios";
-import Storage from "@/utils/storage";
 export default {
   props: ["editedItem", "listCategory"],
   data() {
@@ -118,6 +130,7 @@ export default {
       menu: false,
       modal: false,
       datepick: false,
+      snackbar: false,
       imagePreview: "",
     };
   },
@@ -175,18 +188,27 @@ export default {
       this.editedItem.categoryId = "";
     },
     save() {
-      this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
-      axios
-        .post("http://localhost:3000/devices", this.editedItem)
-        .then((res) => {
-          if (res.data.id != 0) {
-            this.$router.push("/");
-            console.log(this.editedItem);
-          }
-        });
+      if (
+        this.editedItem.deviceName == "" ||
+        this.editedItem.providerID == "" ||
+        this.editedItem.provider == "" ||
+        this.editedItem.categoryId == ""
+      ) {
+        this.snackbar = true;
+      } else {
+        this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
+        axios
+          .post("http://localhost:3000/devices", this.editedItem)
+          .then((res) => {
+            if (res.data.id != 0) {
+              this.$router.push("/");
+              console.log(this.editedItem);
+            }
+          });
 
-      //Storage.store("devices", this.items);
-      this.close();
+        //Storage.store("devices", this.items);
+        this.close();
+      }
     },
   },
 };
