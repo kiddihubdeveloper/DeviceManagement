@@ -15,6 +15,22 @@
         :search="search"
         loading-text="Đang load dữ liệu...Vui lòng chờ một lát"
     >
+      <template #top>
+        <v-radio-group
+            v-model="userFilter"
+            class="pl-5"
+            row
+        >
+          <v-radio
+              label="Tất cả"
+              value="all"
+          ></v-radio>
+          <v-radio
+              label="Chưa trả"
+              value="borrowed"
+          ></v-radio>
+        </v-radio-group>
+      </template>
       <template #item.avatar="{ item }">
         <img
             :src="item.avatar"
@@ -73,6 +89,7 @@ export default {
         0: 'User',
         1: 'Admin'
       },
+      userFilter: "all",
     }
   },
 
@@ -88,6 +105,18 @@ export default {
             console.error(error)
           })
     },
+
+    // get user borrowed
+    getUserBorrowed() {
+      Users.getAll()
+          .then(response => {
+            this.users = response.data.filter(user => user.number_of_devices_borrowed > 0)
+          })
+          .catch(error => {
+            console.error(error)
+          })
+    },
+
 
     //delete user
     deleteItem(item) {
@@ -115,7 +144,7 @@ export default {
           )
           Users.deleteItem(item.id)
               .then(() => {
-                this.getData()
+                this.userFilter === "all" ? this.getData() : this.getUserBorrowed()
               })
               .catch(error => {
                 console.error(error)
@@ -125,7 +154,17 @@ export default {
     }
   },
 
-  beforeMount() {
+  watch: {
+    userFilter: function (newVal) {
+      if (newVal === "all") {
+        this.getData()
+      } else {
+        this.getUserBorrowed()
+      }
+    }
+  },
+
+  created() {
     this.getData()
   }
 
