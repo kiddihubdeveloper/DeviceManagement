@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       editedItem: {
+        id: this.$route.params.id,
         deviceID: "",
         deviceName: "",
         deviceImage: null,
@@ -29,6 +30,7 @@ export default {
         providerID: "",
         provider: "",
         categoryId: "",
+        status: "2",
       },
       listCategory: [],
     };

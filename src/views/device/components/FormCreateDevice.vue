@@ -4,7 +4,7 @@
       <v-container>
         <v-row>
           <v-col cols="6" sm="6" md="6">
-            <v-file-input
+            <!-- <v-text-field
               v-model="editedItem.deviceImage"
               accept="image/png, image/jpeg, image/bmp"
               prepend-icon="mdi-camera"
@@ -12,13 +12,26 @@
               @click:clear="clearImagePreview()"
               label="Ảnh thiết bị"
               placeholder="Pick an image"
-            ></v-file-input>
+            ></v-text-field>
           </v-col>
           <v-col cols="6" sm="6" md="6">
             <v-img
               :src="editedItem.deviceImage ? imagePreview : null"
               height="auto"
               width="7%"
+            ></v-img> -->
+            <v-text-field
+              v-model="editedItem.deviceImage"
+              prepend-icon="mdi-camera"
+              label="Ảnh thiết bị (Only accept link https)"
+              placeholder="Pick an image"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="6" sm="6" md="6">
+            <v-img
+              :src="editedItem.deviceImage ? editedItem.deviceImage : null"
+              height="auto"
+              width="10%"
             ></v-img>
           </v-col>
           <v-col cols="12" sm="12" md="6">
@@ -54,7 +67,7 @@
             >
               <template v-slot:activator="{ on, attrs }">
                 <v-text-field
-                  v-model="date"
+                  v-model="editedItem.createdAt"
                   label="Ngày nhập"
                   prepend-icon="mdi-calendar"
                   readonly
@@ -68,6 +81,7 @@
               ></v-date-picker>
             </v-menu>
           </v-col>
+
           <v-col cols="12" sm="6" md="4">
             <v-text-field
               v-model="editedItem.providerID"
@@ -98,15 +112,6 @@ export default {
   props: ["editedItem", "listCategory"],
   data() {
     return {
-      defaultItem: {
-        deviceID: "",
-        deviceName: "",
-        deviceImage: null,
-        createdAt: new Date(Date.now()).toISOString().slice(0, 10),
-        providerID: "",
-        provider: "",
-        categoryId: "",
-      },
       date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
         .toISOString()
         .slice(0, 10),
@@ -114,12 +119,31 @@ export default {
       modal: false,
       datepick: false,
       imagePreview: "",
-      previews: [],
-      errorImage: "url of an image to use to indicate an error",
     };
   },
 
+  created() {
+    axios.get("http://localhost:3000/devices").then((res) => {
+      this.editedItem.id =
+        parseInt(res.data.sort((a, b) => a.id - b.id)[res.data.length - 1].id) +
+        1;
+      console.log(this.editedItem.id);
+    });
+  },
+
   methods: {
+    formatDate(date) {
+      if (!date) return null;
+
+      const [year, month, day] = date.split("-");
+      return `${day}/${month}/${year}`;
+    },
+    parseDate(date) {
+      if (!date) return null;
+
+      const [month, day, year] = date.split("/");
+      return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+    },
     // upload image to form
     async selectImage(e) {
       const file = e;
@@ -132,23 +156,13 @@ export default {
         });
       const data = await readData(file);
       this.imagePreview = data;
-      this.editedItem.deviceImage = file.name;
+      this.editedItem.deviceImage = this.imagePreview;
       console.log(file.name);
     },
-    // async clearImagePreview() {
-    //   this.editedIndex.deviceImage = null;
-    // },
-    // async selectImage(event) {
-    //   let file = event.target.files[0];
-    //   if (file) {
-    //     let reader = new FileReader();
-    //     reader.onloadend = () => {
-    //       setImagePreviewUrl(reader.result);
-    //     };
-    //     reader.readAsDataURL(file);
-    //   }
-    //   console.log(file);
-    // },
+    async clearImagePreview() {
+      this.editedIndex.deviceImage = null;
+    },
+
     close() {
       this.editedItem.deviceID = "";
       this.editedItem.deviceImage = null;
@@ -161,6 +175,7 @@ export default {
       this.editedItem.categoryId = "";
     },
     save() {
+      this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
       axios
         .post("http://localhost:3000/devices", this.editedItem)
         .then((res) => {

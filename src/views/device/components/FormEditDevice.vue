@@ -1,69 +1,90 @@
 <template>
-  <v-card>
+  <v-card class="ml-3">
     <v-card-text>
       <v-container>
         <v-row>
-          <v-col cols="12" sm="6" md="6">
-            <v-text-field
-              v-model="editedItem.productCode"
-              label="Mã thiết bị"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="6" md="6">
-            <v-text-field
-              v-model="editedItem.productName"
-              label="Tên thiết bị"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="12" md="12">
-            <v-file-input
-              v-model="editedItem.productPicture"
+          <v-col cols="6" sm="6" md="6">
+            <!-- <v-text-field
+              v-model="editedItem.deviceImage"
               accept="image/png, image/jpeg, image/bmp"
               prepend-icon="mdi-camera"
               @change="selectImage"
               @click:clear="clearImagePreview()"
               label="Ảnh thiết bị"
               placeholder="Pick an image"
-            ></v-file-input>
+            ></v-text-field>
           </v-col>
-          <v-col cols="12" sm="12" md="12">
+          <v-col cols="6" sm="6" md="6">
             <v-img
-              class="mx-auto"
-              :src="
-                editedItem.productPicture ? editedItem.productPicture : null
-              "
+              :src="editedItem.deviceImage ? imagePreview : null"
+              height="auto"
+              width="7%"
+            ></v-img> -->
+            <v-text-field
+              v-model="editedItem.deviceImage"
+              prepend-icon="mdi-camera"
+              label="Ảnh thiết bị (Only accept link https)"
+              placeholder="Pick an image"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="6" sm="6" md="6">
+            <v-img
+              :src="editedItem.deviceImage ? editedItem.deviceImage : null"
               height="auto"
               width="10%"
             ></v-img>
           </v-col>
+          <v-col cols="12" sm="12" md="6">
+            <v-text-field
+              v-model="editedItem.id"
+              label="Mã thiết bị"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="6" sm="12" md="6">
+            <v-text-field
+              v-model="editedItem.deviceName"
+              label="Tên thiết bị"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="12" sm="12" md="12">
+            <v-select
+              v-model="editedItem.categoryId"
+              label="Loại thiết bị"
+              :items="listCategory"
+              :item-text="'name'"
+              :item-value="'id'"
+            >
+            </v-select>
+          </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-menu
-              v-model="datepick"
+              v-model="menu"
               :close-on-content-click="false"
               :nudge-right="40"
               transition="scale-transition"
               offset-y
               min-width="auto"
+              hint="DD/MM/YYYY format"
+              persistent-hint
             >
               <template v-slot:activator="{ on, attrs }">
                 <v-text-field
-                  v-model="date"
+                  v-model="editedItem.createdAt"
                   label="Ngày nhập"
                   prepend-icon="mdi-calendar"
-                  readonly
                   v-bind="attrs"
                   v-on="on"
                 ></v-text-field>
               </template>
               <v-date-picker
-                v-model="date"
-                @input="datepick = false"
+                v-model="editedItem.createdAt"
+                @input="menu = false"
               ></v-date-picker>
             </v-menu>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field
-              v-model="editedItem.providerCode"
+              v-model="editedItem.providerID"
               label="Mã nhà cung cấp"
             ></v-text-field>
           </v-col>
@@ -78,53 +99,46 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" text @click="close"> Cancel </v-btn>
+      <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
       id: this.$route.params.id,
-      dialogDelete: false,
-      editedIndex: -1,
       editedItem: {
-        productCode: "",
-        productName: "",
-        productPicture: "",
-        productDay: "",
-        providerCode: "",
+        deviceID: "",
+        deviceName: "",
+        deviceImage: null,
+        createdAt: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+          .toISOString()
+          .slice(0, 10),
+        providerID: "",
         provider: "",
+        categoryId: "",
       },
-      defaultItem: {
-        productCode: "",
-        productName: "",
-        productPicture: null,
-        productDay: "",
-        providerCode: "",
-        provider: "",
-      },
-      date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-        .toISOString()
-        .slice(0, 10),
+      listCategory: [],
+
+      date: new Date(),
       menu: false,
-      modal: false,
-      datepick: false,
+      imagePreview: "",
     };
   },
+  mounted() {},
   created() {
-    this.initialize();
     // if (this.$route.query.path) this.search == this.$route.query.productName;
-    // console.log(this.$route.query.productName);
-    if (this.$route.params.id) {
-      this.editedIndex = this.$route.params.id;
-      this.editedItem = Object.assign({}, this.$route.params);
-      console.log(this.$route.params);
-      console.log(this.editedIndex);
-      console.log(this.editedItem);
+    this.getCategories();
+
+    if (this.id) {
+      axios.get(`http://localhost:3000/devices/${this.id}`).then((res) => {
+        this.editedItem = res.data;
+        this.editedItem.createdAt = this.parseDate(res.data.createdAt);
+      });
     }
   },
   methods: {
@@ -142,23 +156,51 @@ export default {
       this.editedItem.productPicture = data;
     },
     async clearImagePreview() {
-      this.editedIndex.productPicture = null;
+      this.editedIndex.deviceImage = null;
     },
     close() {
-      this.dialog = false;
-      this.$nextTick(() => {
-        this.editedItem = Object.assign({}, this.defaultItem);
-        this.editedIndex = -1;
-      });
+      this.editedItem.deviceID = "";
+      this.editedItem.deviceImage = null;
+      this.editedItem.deviceName = "";
+      this.editedItem.createdAt = new Date(Date.now())
+        .toISOString()
+        .slice(0, 10);
+      this.editedItem.providerID = "";
+      this.editedItem.provider = "";
+      this.editedItem.categoryId = "";
     },
     save() {
-      if (this.editedIndex > -1) {
-        Object.assign(this.items[this.editedIndex], this.editedItem);
-      } else {
-        this.items.push(this.editedItem);
-      }
+      axios
+        .put(`http://localhost:3000/devices/${this.id}`, this.editedItem)
+        .then((res) => {
+          if (res.data.id != 0) {
+            this.$router.push("/");
+            console.log(this.editedItem);
+          }
+        });
+
+      //Storage.store("devices", this.items);
       this.close();
-      console.log(this.items);
+    },
+    getCategories() {
+      axios.get("http://localhost:3000/deviceCategories").then((res) => {
+        this.listCategory = res.data;
+        console.log(this.listCategory);
+      });
+    },
+
+    // change format '- - -' to '/ / /'
+    formatDate(date) {
+      if (!date) return null;
+      const [year, month, day] = date.split("-");
+      return `${day}/${month}/${year}`;
+    },
+
+    //change format '/ / /' to '- - -'
+    parseDate(date) {
+      if (!date) return null;
+      const [month, day, year] = date.split("/");
+      return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
     },
   },
 };

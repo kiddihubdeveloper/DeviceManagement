@@ -1,19 +1,19 @@
 {
   "deviceCategories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "laptop"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "keyboard"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "mouse"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "screen"
     }
   ],
@@ -24,15 +24,17 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "21/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2075",
       "deviceName": "Lenovo Legion 5 Pro 2022",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/2375_lenovo_legion_5_pro_16iah7h_ct1_1600.png?w=500&h=500",
       "providerID": 17883,
-      "createdAt": "28/01/2022",
-      "categoryId": "1"
+      "createdAt": "2022-02-10",
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1967",
@@ -40,7 +42,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/6/DELL-Latitude-7320-Detachable-H2.jpeg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "21/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "2"
     },
     {
       "id": "873",
@@ -48,7 +51,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "17/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "2"
     },
     {
       "id": "1675",
@@ -56,7 +60,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/13/xps139315 1.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "10/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "2"
     },
     {
       "id": "2132",
@@ -64,7 +69,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/28/11551_asus_zenbook_flip_15_q508_3.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "01/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1702",
@@ -72,7 +78,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/lenovo-thinkpad-e14-gen-4-14-intel-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "24/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "232",
@@ -80,7 +87,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Lenovo-ThinkPad-P1-Gen-2-thinkpro-03.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "26/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1952",
@@ -88,7 +96,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/5/laptop-lg-gram-17-2021-7.jpeg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "20/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1718",
@@ -96,7 +105,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/2/dell-inspiron-14-7420-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "13/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1602",
@@ -104,7 +114,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/hp-probook-440-g8-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "12/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1715",
@@ -112,7 +123,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/dell-inspiron-147420-2-in-1-thinkpro-1.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "11/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1908",
@@ -120,7 +132,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/26/T14sG2is 2.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "06/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2007",
@@ -128,7 +141,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/14/LG Gram 17 2022 nhập khẩu  2.jpeg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "11/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2111",
@@ -136,7 +150,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/17/lenovo-thinkpad-t14-gen-3-amd-den_5.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "31/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "292",
@@ -144,7 +159,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/suface-laptop-3-thinkpro-1.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "30/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1195",
@@ -152,7 +168,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/4/asus-ultra-thin-15.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "03/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "268",
@@ -160,7 +177,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/lenovo-thinkpad-x1-carbon-gen8-thinkpro-03.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "07/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "591",
@@ -168,7 +186,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/22/Macbook-Air-M1-ThinkPro-1.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "03/11/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1471",
@@ -176,7 +195,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/Matebook-D15-2021-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "26/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "595",
@@ -184,7 +204,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/acer-swift-3-14-amd-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "28/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1433",
@@ -192,7 +213,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/acer-swift-x-intel-thinkpro-1.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "21/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1005",
@@ -200,7 +222,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/11/aero15-1.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "20/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "894",
@@ -208,7 +231,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/5/gram17-21-white-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "20/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1441",
@@ -216,7 +240,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/AERO-16-XE15-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "05/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1004",
@@ -224,7 +249,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/gigabyte-aorus-15p-gaming-laptop-thinkpro-1.png?w=500&h=500",
       "providerID": 17878,
       "createdAt": "06/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "872",
@@ -232,7 +258,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/ThinkBook-13s-G2-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "01/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1002",
@@ -240,7 +267,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/gigabyte-g4-thinkpro-01.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "07/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1313",
@@ -248,7 +276,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/gigabyte-u4-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "03/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1426",
@@ -256,7 +285,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/lenovo-legion-s7-amd-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "29/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "610",
@@ -264,7 +294,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/lenovo-yoga-slim-7-carbon-82l0005bvn-thinkpro-01.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "04/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1230",
@@ -272,7 +303,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/2/yoga-slim-7-pro-14ihu5-o-ct1-02-thinkpro.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "10/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1137",
@@ -280,7 +312,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/acer-nitro-5-2021-thinkpro-001-1.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "03/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "885",
@@ -288,7 +321,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/avita-liber-v14-intel-05-thinkpro-1.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "17/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1222",
@@ -296,7 +330,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/15/HP-Victus-Gaming-16-AMD-ThinkPro-1.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "07/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1192",
@@ -304,7 +339,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Asus-Zenbook-Flip-13-OLED-thinkpor-01.jpeg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "15/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "514",
@@ -312,7 +348,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/asus-vivobook-s15-s533-thinkpro-1.png?w=500&h=500",
       "providerID": 17889,
       "createdAt": "01/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1640",
@@ -320,7 +357,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/dell-inspiron-16-5625-thinkpro-01.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "13/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "892",
@@ -328,7 +366,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/asus-vivobook-flip-tp470ea-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "12/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "475",
@@ -336,7 +375,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/Modern-14-B11MOU-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "29/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1427",
@@ -344,7 +384,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/28/lenovo-ideapad-yoga-6-amd-thinkpro-1.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "08/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1448",
@@ -352,7 +393,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Dell-Inspiron-5415-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "15/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1346",
@@ -360,7 +402,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/asus-vivobook-15-pro-oled-thinkpro-1.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "28/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "993",
@@ -368,7 +411,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/asus-rog-strix-g15-g513-thinkpro-1.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "10/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1424",
@@ -376,7 +420,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/hp-victus-gaming-16-intel-thinkpro-1.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "25/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1244",
@@ -384,7 +429,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/28/dell-latitude-3520-intel-thinkpro-1.png?w=500&h=500",
       "providerID": 17878,
       "createdAt": "26/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "509",
@@ -392,7 +438,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/asus-zenbook-14-ux25ea-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "21/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "604",
@@ -400,7 +447,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/asus-zenbook-13-ux25ea-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "03/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1203",
@@ -408,7 +456,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/4/Dell Gaming G15 5515 Ryzen Edition (Chính Hãng) - thinkpro.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "25/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1450",
@@ -416,7 +465,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/dell-Inspiron-5410-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "27/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1520",
@@ -424,7 +474,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/24/02_FX507.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "24/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1405",
@@ -432,7 +483,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/acer-nitro-5-tiger-intel-gen-12-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "01/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "435",
@@ -440,7 +492,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/MSI-modern-15-A10MU-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "26/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1447",
@@ -448,7 +501,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Asus-TUF-FX706H-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "26/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1687",
@@ -456,7 +510,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/msi-modern-15-a11m-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "16/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1351",
@@ -464,7 +519,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/11/lenovo-ideapad-5-pro-16ach6-thinkpro-100.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "13/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "996",
@@ -472,7 +528,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/asus-tuf-gaming-f15-2021-thinkpro-1.png?w=500&h=500",
       "providerID": 17889,
       "createdAt": "27/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1765",
@@ -480,7 +537,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/2/LG-Gram-16-2022-ThinkPro.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "13/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1347",
@@ -488,7 +546,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/asus-vivobook-14-pro-oled-thinkpro-1.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "23/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1236",
@@ -496,7 +555,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/dell-vostro-14-3400-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17878,
       "createdAt": "06/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1766",
@@ -504,7 +564,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/2/LG-Gram-16-2022-ThinkPro.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "16/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1467",
@@ -512,7 +573,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/4/hp-envy-x360-intel-thinkpro-6.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "02/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "769",
@@ -520,7 +582,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/dell-vostro-15-3500-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "30/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "756",
@@ -528,7 +591,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/hp-pavilion-15-intel-thinkpro-01.jpeg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "21/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1767",
@@ -536,7 +600,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/LG-Gram-14-2022-ThinkPro-10.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "17/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1242",
@@ -544,7 +609,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/lenovo-ideapad-5-15-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "09/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "828",
@@ -552,7 +618,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/28/acer-nitro-5-15-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "15/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "957",
@@ -560,7 +627,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/acer-aspire-3-15-intel-001-thinkpro-1.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "23/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1717",
@@ -568,7 +636,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/asus-zenbook-14x-oled-space-edition-ux5401-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "10/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1592",
@@ -576,7 +645,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/27/ZenBook Flip 14 OLED_UP5401_Product photo_3G_Pine Grey_28.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "04/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "501",
@@ -584,7 +654,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Acer Aspire-5-14-thinkpro-01.jpeg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "24/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1280",
@@ -592,7 +663,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/lenovo-ideapad-3-15-intel-gen-11-thinkpro-01.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "11/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "937",
@@ -600,7 +672,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/asus-tuf-dash-f15-thinkpro-1.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "27/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1731",
@@ -608,7 +681,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/24/Huawei-matebook-14-2022-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "23/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1711",
@@ -616,7 +690,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/3/UX3402ZA-KM218W-1.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "19/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1228",
@@ -624,7 +699,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/Aspire-3-A315-58-Silver-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "19/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "516",
@@ -632,7 +708,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/asus-vivobook-s14-s433-intel-gen-11-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "24/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1204",
@@ -640,7 +717,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/dell-vostro-3510-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "25/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1258",
@@ -648,7 +726,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/28/dell-inspiron-15-3511-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "26/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1739",
@@ -656,7 +735,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/25/huawei-matepad-t10-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "17/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "606",
@@ -664,7 +744,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/lenovo-yoga-slim-7i-14-burgundy-thinkpro-1.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "18/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1732",
@@ -672,7 +753,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/14/huawei-matebook-d16-2022-thinkpro-2.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "19/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "823",
@@ -680,7 +762,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/lenovo-ideapad-3-14-thinkpro-1.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "10/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "625",
@@ -688,7 +771,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/4/dell-vostro-14-3405-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "25/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1279",
@@ -696,7 +780,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/acer-travelmate-b3-thinkpro-1.png?w=500&h=500",
       "providerID": 17883,
       "createdAt": "01/11/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1273",
@@ -704,7 +789,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/19/macbook-pro-16-inch-large-2x.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "11/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1632",
@@ -712,7 +798,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/asus-zenbook-14-q409za-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "07/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1443",
@@ -720,7 +807,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/4/Huawei-matebook-14-thinkpro-01.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "02/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "967",
@@ -728,7 +816,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/MSI-Bravo-15-264VN-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "01/11/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2090",
@@ -736,7 +825,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/10/11439_dell_xps_9320_ch_4.jpeg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "04/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1593",
@@ -744,7 +834,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/27/Huawei MateBook 14 AMD  1.jpeg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "28/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2092",
@@ -752,7 +843,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/10/dell-inspiron-14 5420-thinkpro-02.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "06/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1292",
@@ -760,7 +852,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/dell-alienware-m15-r6-thinkpro-1.png?w=500&h=500",
       "providerID": 17883,
       "createdAt": "17/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1282",
@@ -768,7 +861,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/lenovo-ideapad-1-thinkpro-1.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "19/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1216",
@@ -776,7 +870,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/28/dell-inspiron-15-3505-thinkpro-1.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "23/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1744",
@@ -784,7 +879,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/27/lenovo-legion-5-amd-2022.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "07/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1428",
@@ -792,7 +888,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/25/IdeaPad_5_Pro_14ACN6_82L700L7VN_01.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "09/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1177",
@@ -800,7 +897,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/Modern-14-B5M-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "17/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1612",
@@ -808,7 +906,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/ASUS Zenbook Pro 16X OLED  2.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "31/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1396",
@@ -816,7 +915,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/dell-gaming-g15-5511-intel-gen-11-thinkpro-1.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "06/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1768",
@@ -824,7 +924,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/LG-Gram-17-2022-No-OS-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "16/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1764",
@@ -832,7 +933,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/LG-Gram-14-2022-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "08/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "452",
@@ -840,7 +942,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/21/ideapadgm3-black-1.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "09/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1530",
@@ -848,7 +951,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/31/Asus ROG Strix G15 (G513) 66.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "09/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "504",
@@ -856,7 +960,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/25/sf514-55ta-mistgreen-1.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "11/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "763",
@@ -864,7 +969,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/3/nitro5-2020-01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "07/02/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1003",
@@ -872,7 +978,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/gigabyte-g7-gaming-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "20/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "502",
@@ -880,7 +987,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/acer-aspire-7-gaming-amd-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "27/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1158",
@@ -888,7 +996,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/msi-modern-15-a5m-thinkpro.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "15/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1892",
@@ -896,7 +1005,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/25/Matebook-D14-2021-ThinkPro-02.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "22/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1523",
@@ -904,7 +1014,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/24/MSI_NB_GF63_photo_03.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "03/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1757",
@@ -912,7 +1023,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/30/ASUS-ROG-Strix-SCAR-15-2022-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "20/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1272",
@@ -920,7 +1032,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/10/19/macbook-pro-14-inch-large-2x.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "14/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "590",
@@ -928,7 +1041,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/11/19/macbook-pro-13-2020.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "22/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1763",
@@ -936,7 +1050,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/1/ThinkPad-T16-1 (1).jpeg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "01/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1442",
@@ -944,7 +1059,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/15/AORUS-15-XE-thinkpro-01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "26/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1564",
@@ -952,7 +1068,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/13/ASUS TUF Gaming A1566.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "04/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1672",
@@ -960,7 +1077,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/12/Lenovo Ideapad Gaming 3 2022 1.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "28/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1673",
@@ -968,7 +1086,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/13/组合2-min.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "02/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "887",
@@ -976,7 +1095,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/20/liberv14a-summerpink-1.png?w=500&h=500",
       "providerID": 17878,
       "createdAt": "26/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1549",
@@ -984,7 +1104,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/6/ Laptop Gaming Colorful X15.jpeg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "09/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1504",
@@ -992,7 +1113,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/16/TUF-Dash-F15-FX517ZC-HN077W-thinkpro-Black-01.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "30/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1514",
@@ -1000,7 +1122,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/20/asus_rog_flow_z13_thinkpro 2.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "22/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1209",
@@ -1008,7 +1131,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/26/hp-15s-intel-thinkpro-1.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "20/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1303",
@@ -1016,7 +1140,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/11/6/msi-gf63-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "22/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "503",
@@ -1024,7 +1149,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/9/1/acer-swift-3-grandient-blue-thinkpro-2.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "01/11/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1431",
@@ -1032,7 +1158,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/29/ThinkPad_E14_Gen_2_Intel_01.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "30/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "563",
@@ -1040,7 +1167,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/11/2/a515sil-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "20/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1168",
@@ -1048,7 +1176,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/8/13/helios-300-thinkpro-2.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "25/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1126",
@@ -1056,7 +1185,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/12/10/lenovo-legion-5-15ach6a-ct1-03-blue-1.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "15/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1384",
@@ -1064,7 +1194,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/4/HP_OMEN_16_4Y0W7PA_thinkpro 1.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "29/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1532",
@@ -1072,7 +1203,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/1/ThinkPad-E15-Gen-3-AMD-thinkpro-01.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "13/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "764",
@@ -1080,7 +1212,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/3/pavi14g11gold-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "10/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2122",
@@ -1088,15 +1221,17 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/2/msi-modern-14-c5m-thinkpro-01 (1).png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "17/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2160",
-      "deviceName": "Lenovo Yoga Slim 7 Pro 14IHU5",
+      "deviceName": "Lenovo Yoga Slim 7 Pro 14IHU",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/1/lenovo-yoga-slim-7-pro-14ihu5-thinkpro-01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "13/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2159",
@@ -1104,7 +1239,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/1/lenovo-ideapad-5-pro-14iap7-thinkpro-01.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "27/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2158",
@@ -1112,7 +1248,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/11/1/lenovo-ideapad-5-pro-14itl6-82l300m9vn-thinkpro-02.png?w=500&h=500",
       "providerID": 17883,
       "createdAt": "04/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2123",
@@ -1120,7 +1257,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/26/msi-modern-15-b5m-023vn-thinkpro-01.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "06/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2091",
@@ -1128,7 +1266,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/10/dell-insprion-15-3520-thinkpro-10.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "30/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2089",
@@ -1136,7 +1275,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/10/ASUS-ProArt-Studiobook-16-OLED-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "10/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2032",
@@ -1144,7 +1284,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/19/h732 (18).png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "12/06/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2062",
@@ -1152,7 +1293,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/27/msi-katana-gf66-699vn-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "15/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "2011",
@@ -1160,7 +1302,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/14/thinkpad-t14-g2-amd-1.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "15/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1971",
@@ -1168,7 +1311,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/9/hp-15s-fq5104tu-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "23/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1970",
@@ -1176,7 +1320,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/8/hp-15s-fq5081tu-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "18/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1969",
@@ -1184,7 +1329,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/8/hp-15s-fq5104tu-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "13/03/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1946",
@@ -1192,7 +1338,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/5/msi-modern-15-b12m-01.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "18/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1945",
@@ -1200,7 +1347,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/5/msi-modern-14-c12m-1.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "23/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1909",
@@ -1208,7 +1356,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/26/42672_laptop_lenovo_ideapad_5_pr.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "23/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1890",
@@ -1216,7 +1365,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/25/Inspiron-14-7420-1YT85-ThinkPro-1.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "05/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1885",
@@ -1224,7 +1374,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/24/Dell-Inspiron-16-5620-01.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "11/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1884",
@@ -1232,7 +1383,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/24/HP-Pavilion-14-dv205-01.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "20/08/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1883",
@@ -1240,7 +1392,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/24/Asus-Vivobook-14-X1402ZA-EK232W-1.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "25/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1866",
@@ -1248,7 +1401,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/23/MSI-Stealth-GS77-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "18/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1862",
@@ -1256,7 +1410,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/23/MSI-Raider-GE67-HX-2022-ThinkPro-1.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "18/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1796",
@@ -1264,7 +1419,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/MSI-Raider-GE77-HX-2022-ThinkPro-01.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "22/05/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1789",
@@ -1272,7 +1428,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/MSI-Titan-GT77-12UHS-01.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "09/01/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1782",
@@ -1280,7 +1437,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/MSI-Raider-GE66 12UGS-405VN-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "04/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1779",
@@ -1288,7 +1446,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/asus-vivobook-s14-flip-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "24/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1778",
@@ -1296,7 +1455,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/asus-proart-studiobook-16-oled-thinkpro-01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "16/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1777",
@@ -1304,7 +1464,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/Asus-Vivobook-Pro-X-N7600ZE-L2010W-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "01/07/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1776",
@@ -1312,7 +1473,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/Asus-VivoBook-Pro-15X-OLED-AMD-2022-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "19/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1775",
@@ -1320,7 +1482,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/ASUS-Vivobook-14X-OLED-AMD-2022-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "21/04/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1755",
@@ -1328,7 +1491,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/28/ASUS-ROG-Strix-SCAR-17-SE-ThinkPro-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "04/09/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1740",
@@ -1336,7 +1500,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/26/Asus-ROG-Flow-X16-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "05/10/2022",
-      "categoryId": "1"
+      "categoryId": "1",
+      "status": "1"
     },
     {
       "id": "1131",
@@ -1344,7 +1509,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/71xw9BqcICS._AC_SL1500_.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "05/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "671",
@@ -1352,7 +1518,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Keychron-K8-tenkeyless-wireless-mechanical-keyboard-for-Mac-Windows-iOS-RGB-white-backlight-aluminum-frame-with-Hot-swappable-Gateron-switch-blue_1800x1800.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "15/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "924",
@@ -1360,7 +1527,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/12/minilaair-skygrey-1.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "12/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "904",
@@ -1368,7 +1536,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Keychron-K4-version2-hot-swappable-wireless-mechanical-keyboard-96percent-layout-for-Mac-Windows-iOS-Gateron-switch-blue-with-type-C-RGB-white-backlight_1800x1800.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "08/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "670",
@@ -1376,7 +1545,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-blue-with-type-C-RGB-white-backlight_3d876bd9-1dbb-468f-b0de-6d6a2c98e2ba_1800x1800.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "04/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "669",
@@ -1384,7 +1554,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Keychron-K2-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-blue-with-type-C-RGB-white-backlight_7247ac65-e246-451e-b367-cd6c5b6411be_1800x1800.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "13/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "984",
@@ -1392,7 +1563,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/2/du-ek861-1.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "31/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "958",
@@ -1400,7 +1572,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/191903.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "07/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "923",
@@ -1408,7 +1581,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/12/minilaair-asagi-1.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "21/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "880",
@@ -1416,7 +1590,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/21/keychronk3-rgb-redoptic.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "13/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1128",
@@ -1424,7 +1599,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3087-v2-steam-engine-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "03/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "992",
@@ -1432,7 +1608,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/7/3068-worldtourtokyo-r2-1.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "10/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "936",
@@ -1440,7 +1617,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/majestouchconvertible2fullsize-matcha-1.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "26/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "934",
@@ -1448,7 +1626,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/majestouchconvertible2fullsize-hakua-1.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "02/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "931",
@@ -1456,7 +1635,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/13/majestouchconvertible2tkl-matcha-1.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "30/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "927",
@@ -1464,7 +1644,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/12/majestouchconvertible2tkl-hakua-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "20/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "926",
@@ -1472,7 +1653,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/12/majestouchconvertible2tkl-1.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "31/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "882",
@@ -1480,7 +1662,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/21/silent-3084-1.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "25/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "672",
@@ -1488,7 +1671,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/1/14/k2palm-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "07/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1660",
@@ -1496,7 +1680,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/7/NJ80-9.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "17/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1219",
@@ -1504,7 +1689,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/15/Q1_18.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "11/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1218",
@@ -1512,7 +1698,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/nj80-2.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "06/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1436",
@@ -1520,7 +1707,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/8/PC75B Tiger_1.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "29/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1658",
@@ -1528,7 +1716,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/7/NJ80-4.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "13/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1716",
@@ -1536,7 +1725,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/7/Keychron-K8-Pro-01.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "05/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1685",
@@ -1544,7 +1734,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/18/Keychron K7_01.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "10/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1629",
@@ -1552,7 +1743,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/23/Z75_01.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "24/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1622",
@@ -1560,7 +1752,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/20/OG80-01.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "25/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1725",
@@ -1568,7 +1761,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/19/GM780_01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "17/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1462",
@@ -1576,7 +1770,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/F96-02.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "15/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1668",
@@ -1584,7 +1779,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/9/k1v5_01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "27/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1722",
@@ -1592,7 +1788,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/14/keychron-k5-01.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "09/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1661",
@@ -1600,7 +1797,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/7/NJ80-12.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "15/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1650",
@@ -1608,7 +1806,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/1/Maxfit67.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "13/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1724",
@@ -1616,7 +1815,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/18/CKM68-02.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "20/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1726",
@@ -1624,7 +1824,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/19/GM780_08.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "23/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1742",
@@ -1632,7 +1833,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/26/GMK Pro_01.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "12/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1589",
@@ -1640,7 +1842,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/22/Q75_04.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "20/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1588",
@@ -1648,7 +1851,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/22/Q75_01.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "10/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1539",
@@ -1656,7 +1860,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/3084b-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "10/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1518",
@@ -1664,7 +1869,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/23/ban-phim-akko-pc75b-plus-black-silver-01.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "21/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1519",
@@ -1672,7 +1878,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/23/pc75b-plus-blue-on-white-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "25/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1822",
@@ -1680,7 +1887,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/NJ81_02.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "20/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2015",
@@ -1688,7 +1896,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/15/Q3.01.png?w=500&h=500",
       "providerID": 17883,
       "createdAt": "14/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2014",
@@ -1696,7 +1905,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/15/Q5.01.png?w=800&h=400",
       "providerID": 17883,
       "createdAt": "06/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1795",
@@ -1704,7 +1914,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/IQUNIX-F97-Wintertide-main_01.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "11/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1794",
@@ -1712,7 +1923,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/Keychron-V1_01.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "20/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1293",
@@ -1720,7 +1932,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/Q75 Bunny -1.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "17/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1289",
@@ -1728,7 +1941,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-neon-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "01/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1700",
@@ -1736,7 +1950,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/29/mx-mechanical-01.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "16/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1331",
@@ -1744,7 +1959,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/FL-Esports-FL980CPM-Polar-Night-White-Red-Switch-(1).png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "30/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1330",
@@ -1752,7 +1968,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/45313_kec_fle_fl980cpmseasalt_w.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "11/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1348",
@@ -1760,7 +1977,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/MX Keys Mini 1.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "03/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1359",
@@ -1768,7 +1986,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/16/FC660MPD Sweden White 1.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "06/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1304",
@@ -1776,7 +1995,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/kit-ban-phim-co-akko-designer-studio-mod005-dark-knight.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "20/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1220",
@@ -1784,7 +2004,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/15/nj68-3.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "07/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1290",
@@ -1792,7 +2013,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-ocean-star-01.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "10/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1287",
@@ -1800,7 +2022,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-neon-01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "29/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1818",
@@ -1808,7 +2031,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/2583352_852910.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "25/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1291",
@@ -1816,7 +2040,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098n-multi-modes-black-gold-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "25/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1295",
@@ -1824,7 +2049,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/kit-ban-phim-co-akko-designer-studio-mod007-dark-knight-510x510.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "05/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1307",
@@ -1832,7 +2058,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/27/switch-ban-phim-akko-ttc.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "30/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1323",
@@ -1840,7 +2067,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/21287-61389_ban_phim_co_flesport_fl680_sam_banana_brown_sw_gateron_cap_0000_1.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "26/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1324",
@@ -1848,7 +2076,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/11/12/ban-phim-fl-esports-fl680sam-51.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "22/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1327",
@@ -1856,7 +2085,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/16/CKM87 Yellow 02.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "26/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1372",
@@ -1864,7 +2094,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3108-v2-steam-engine-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "11/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1663",
@@ -1872,7 +2103,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/8/Keychron-double-shot-pbt-osa-keycaps-dark-black.png?w=500&h=500",
       "providerID": 17889,
       "createdAt": "01/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1741",
@@ -1880,7 +2112,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/26/GMK Pro_01.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "27/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2004",
@@ -1888,7 +2121,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/13/ban-phim-co-akko-3068b-plus-blue-on-white-04.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "11/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2005",
@@ -1896,7 +2130,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/13/ban-phim-co-akko-3068b-plus-black-cyan-04.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "16/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1839",
@@ -1904,7 +2139,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/16/CMK87-(1)_heart.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "25/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1849",
@@ -1912,7 +2148,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/17/AKKO-3084-v2-RGB-Black-01.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "30/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1889",
@@ -1920,7 +2157,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/25/Newmen-GM780-Starry-Gasket-nat-style-sw.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "18/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2006",
@@ -1928,7 +2166,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/13/ban-phim-co-khong-day-akko-3068B-plus-black-gold.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "01/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1854",
@@ -1936,7 +2175,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/19/F97Dark_01.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "31/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1853",
@@ -1944,7 +2184,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/19/F97Hitchhiker-01.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "06/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1848",
@@ -1952,7 +2193,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/17/3098B9009_01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "12/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1799",
@@ -1960,7 +2202,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/10/F97Vari-01.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "10/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1838",
@@ -1968,7 +2211,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/16/ek3187w_01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "12/05/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1284",
@@ -1976,7 +2220,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/XDA___K6.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "14/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2029",
@@ -1984,7 +2229,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/17/CMK68SAM-Metal-Heart-3.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "21/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1851",
@@ -1992,7 +2238,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/18/Keychron-K6-Pro-QMK-VIA-Wireless_04.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "22/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1995",
@@ -2000,7 +2247,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/10/ban-phim-co-fl-esports-fl750-white-ovilian.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "12/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1994",
@@ -2008,7 +2256,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/10/FL750_Metal.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "02/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1505",
@@ -2016,7 +2265,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/16/CKM87 Polar Night.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "15/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1463",
@@ -2024,7 +2274,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/F96-11.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "14/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1497",
@@ -2032,7 +2283,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/15/Keychron-Q2-05.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "18/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1498",
@@ -2040,7 +2292,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/15/Q1_05.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "26/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1233",
@@ -2048,7 +2301,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-prunus-pannesiana-01.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "03/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1506",
@@ -2056,7 +2310,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/16/CMK87-(1).jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "06/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1262",
@@ -2064,7 +2319,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/Newmen-GM840-1.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "05/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1259",
@@ -2072,7 +2328,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/GM680-9.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "14/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1234",
@@ -2080,7 +2337,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-3098b-multi-modes-world-tour-tokyo-r2-01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "16/07/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1257",
@@ -2088,7 +2346,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/1/14/ban-phim-co-akko-5108-world-tour-tokyo-r2-sp-01.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "17/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1452",
@@ -2096,7 +2355,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/18/ban-phim-co-5087b-multi-modes-world-tour-london-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "09/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1439",
@@ -2104,7 +2364,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/10/ban-phim-co-5087b-multi-modes-dracula-castle-01.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "19/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1437",
@@ -2112,7 +2373,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/10/POP keys_01.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "02/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1461",
@@ -2120,7 +2382,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/23/ban_phim_surface_pro_8_x.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "03/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1786",
@@ -2128,7 +2391,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/6/d1141ec1e3cd7e9b8a12cde47c5c9f8b.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "15/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1466",
@@ -2136,7 +2400,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/A80-01.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "13/10/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1465",
@@ -2144,7 +2409,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/L80-07.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "26/02/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1434",
@@ -2152,7 +2418,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/8/K10_01.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "24/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1464",
@@ -2160,7 +2427,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/L80-01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "17/04/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2034",
@@ -2168,7 +2436,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/21/dell-detachable-travel-keyboard-for-dell-latitude-7320-fr.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "06/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "1821",
@@ -2176,7 +2445,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/23/2-1660121020154-removebg-preview.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "23/01/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2041",
@@ -2184,7 +2454,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/22/8_c69503b3-c8bd-4173-85e0-b0375398ec53_1080x.jpeg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "09/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2040",
@@ -2192,7 +2463,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/22/10_7f5ee898-0b3c-4634-a22e-d6fde17c5158_1080x.jpeg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "12/03/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2037",
@@ -2200,7 +2472,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/22/thumbphim_8c0a32025f454cd1ae2c918e09aa43f2.jpeg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "08/06/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2038",
@@ -2208,7 +2481,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/22/5_3d626460-59fa-47d4-b2f9-fc77e63cb558_1800x1800 (1).jpeg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "05/09/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "2039",
@@ -2216,7 +2490,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/22/2_c53e7880-5c0f-4ee3-970f-347ffa5656f4_1800x1800.jpeg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "27/08/2022",
-      "categoryId": "2"
+      "categoryId": "2",
+      "status": "1"
     },
     {
       "id": "825",
@@ -2224,7 +2499,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/3/20/g603-1.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "13/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "411",
@@ -2232,7 +2508,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/mx2s-01jpg?w=800&h=400",
       "providerID": 17888,
       "createdAt": "30/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "419",
@@ -2240,7 +2517,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/gpro-01jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "30/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "820",
@@ -2248,7 +2526,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/3/13/mxmaster3gra-01.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "05/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "464",
@@ -2256,7 +2535,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/10/2/mxa3w-01.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "26/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "839",
@@ -2264,7 +2544,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/3/29/tufm3-1.jpg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "11/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "463",
@@ -2272,7 +2553,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/10/2/mxa3w-01.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "09/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "414",
@@ -2280,7 +2562,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g102-01jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "07/04/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "413",
@@ -2288,7 +2571,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/m331-01jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "24/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1190",
@@ -2296,7 +2580,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/5/Chuot-gaming-AORUS-M4-001.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "20/04/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1180",
@@ -2304,7 +2589,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/9/Chuot-Lenovo-Legion-M500-RGB-Gaming-002.png?w=500&h=500",
       "providerID": 17885,
       "createdAt": "01/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1159",
@@ -2312,7 +2598,8 @@
       "deviceImage": "/_nuxt/img/fallback-image.4d0336f.png",
       "providerID": 17877,
       "createdAt": "28/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1133",
@@ -2320,7 +2607,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Basilisk Ultimate_01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "12/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1127",
@@ -2328,7 +2616,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/41863_5.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "16/07/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1116",
@@ -2336,7 +2625,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Chuot-Logitech-MX-Master-2S-001.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "17/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1065",
@@ -2344,7 +2634,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/6/26/chuot-khong-day-dareu-lm118b-black-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "04/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "912",
@@ -2352,7 +2643,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/6/lm115g-black-1.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "11/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "895",
@@ -2360,7 +2652,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/25/m350-graphite-1.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "18/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "888",
@@ -2368,7 +2661,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/4/22/arcmouse-black-1.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "03/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "792",
@@ -2376,7 +2670,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/22/m590-black.jpg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "25/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "759",
@@ -2384,7 +2679,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/1/b175-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "02/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "747",
@@ -2392,7 +2688,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/1/21/bluetooth-black-01.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "27/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "746",
@@ -2400,7 +2697,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/1/21/1850black-01.jpg?w=800&h=400",
       "providerID": 17884,
       "createdAt": "19/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "647",
@@ -2408,7 +2706,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/1/6/d358-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "16/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "418",
@@ -2416,7 +2715,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g903-01jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "24/04/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "417",
@@ -2424,23 +2724,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/21/g502-01.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "05/07/2022",
-      "categoryId": "3"
-    },
-    {
-      "id": "416",
-      "deviceName": "Chuột Logitech G703 HERO LIGHTPSEED Wireless Gaming",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g703-01jpg?w=500&h=500",
-      "providerID": 17879,
-      "createdAt": "15/06/2022",
-      "categoryId": "3"
-    },
-    {
-      "id": "415",
-      "deviceName": "Chuột Logitech G304  LIGHTSPEED Wireless",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/g304-01jpg?w=500&h=500",
-      "providerID": 17875,
-      "createdAt": "22/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "412",
@@ -2448,7 +2733,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2020/9/15/m185-01jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "08/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "359",
@@ -2456,7 +2742,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/2/22/m337-black.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "05/09/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1705",
@@ -2464,7 +2751,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/30/G604_01.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "26/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1699",
@@ -2472,7 +2760,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/29/logitech_mx_master_3S_01.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "05/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1232",
@@ -2480,7 +2769,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/TP0101.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "29/09/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1857",
@@ -2488,7 +2778,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/22/m705-gallery-1.png?w=500&h=500",
       "providerID": 17883,
       "createdAt": "22/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1390",
@@ -2496,7 +2787,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/logitech-g402-hyperion-fury-01.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "03/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1858",
@@ -2504,7 +2796,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/22/m720-gallery-1a.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "12/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1454",
@@ -2512,7 +2805,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/19/chuot-razer-pro-click-wireless-01.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "19/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1455",
@@ -2520,7 +2814,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/19/Proclick_mini_01.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "26/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1460",
@@ -2528,7 +2823,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/22/m221_01.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "25/02/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1874",
@@ -2536,7 +2832,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/23/m317-black-gallery-1.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "05/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1451",
@@ -2544,7 +2841,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/17/logitech-mouse-pad-studio-series-corner-view-blue-grey 1.png?w=500&h=500",
       "providerID": 17889,
       "createdAt": "11/07/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1438",
@@ -2552,7 +2850,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/10/chuot-khong-day-logitech-pop-mouse_01.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "22/02/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1472",
@@ -2560,7 +2859,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/5/Chuot_Huawei_thinkpro+01.png?w=500&h=500",
       "providerID": 17876,
       "createdAt": "03/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1710",
@@ -2568,7 +2868,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/11/chuat-Bluetooth-Huawei-AF30-thinkpro-01.jpeg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "06/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1229",
@@ -2576,7 +2877,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Chuot-khong-day-Dareu-LM106G-(LM106G)-002.png?w=800&h=400",
       "providerID": 17889,
       "createdAt": "27/04/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1613",
@@ -2584,7 +2886,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/13/518Ke3Rkz2L.jpg?w=800&h=400",
       "providerID": 17885,
       "createdAt": "07/02/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1435",
@@ -2592,7 +2895,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/8/M650_01.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "12/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1508",
@@ -2600,7 +2904,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/17/E500_01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "01/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1720",
@@ -2608,7 +2913,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/9/lot-chuot_01.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "16/07/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1873",
@@ -2616,7 +2922,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/23/m310-dark-grey-gallery-1.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "04/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1921",
@@ -2624,7 +2931,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/27/m525-black-gallery-1.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "04/10/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "2098",
@@ -2632,7 +2940,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/11/Ảnh chụp Màn hình 2022-10-11 lúc 16.20.55.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "09/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1317",
@@ -2640,7 +2949,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/11/Chuot-ASUS-ROG-Gladius-III-Wireless-001.jpeg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "04/09/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1319",
@@ -2648,7 +2958,8 @@
       "deviceImage": "/_nuxt/img/fallback-image.4d0336f.png",
       "providerID": 17878,
       "createdAt": "16/04/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1536",
@@ -2656,7 +2967,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/argentm501.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "30/05/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1537",
@@ -2664,7 +2976,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/5/Kep-giu-day-chuot-Thermaltake-Argent-MB1-(6).jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "05/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1859",
@@ -2672,7 +2985,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/23/Legion-M300s-Gaming-Mouse-ThinkPro-02.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "25/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1922",
@@ -2680,7 +2994,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/27/G304-04.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "16/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1652",
@@ -2688,7 +3003,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/2/LifVertical-1.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "21/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1357",
@@ -2696,7 +3012,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/1637218100_1.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "17/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1391",
@@ -2704,7 +3021,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Chuot-khong-day-Logitech-M325-Wireless-(M325)-001.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "08/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1318",
@@ -2712,7 +3030,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/11/Chuot-Asus-ROG-Strix-Impact-II-Electro-Punk-001.jpeg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "17/06/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1328",
@@ -2720,7 +3039,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/14241.jfif?w=500&h=500",
       "providerID": 17889,
       "createdAt": "27/08/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1332",
@@ -2728,7 +3048,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/040444.jfif?w=500&h=500",
       "providerID": 17882,
       "createdAt": "29/01/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1381",
@@ -2736,7 +3057,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/9/Chuot-khong-day-Newmen-F007-001.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "12/03/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1680",
@@ -2744,7 +3066,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/15/Chuột vi tính Lenovo Go USB-C Wireless Mouse GY51C21210 Storm Grey 8.jpeg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "21/02/2022",
-      "categoryId": "3"
+      "categoryId": "3",
+      "status": "1"
     },
     {
       "id": "1618",
@@ -2752,7 +3075,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/16/GM27-FQS-ARGB-1.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "09/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "939",
@@ -2760,7 +3084,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/5/14/s2421h-1.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "16/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "659",
@@ -2768,7 +3093,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/1/13/vx2776-sh-01.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "18/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1774",
@@ -2776,7 +3102,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/3/man-hinh-LG-Gram-View-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "08/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1758",
@@ -2784,7 +3111,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/30/msi-monitor-modern-md241p-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "18/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1733",
@@ -2792,7 +3120,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/23/man-hinh-huawei-mateview-se-thinkpro-02.jpg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "15/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1712",
@@ -2800,7 +3129,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/4/Modern-MD241P-1.png?w=500&h=500",
       "providerID": 17888,
       "createdAt": "23/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1709",
@@ -2808,7 +3138,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/2/VG27552K-1.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "15/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1507",
@@ -2816,7 +3147,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/16/VX3418-2KPC-mhd_F02_1_pc_l.png?w=500&h=500",
       "providerID": 17887,
       "createdAt": "20/03/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1197",
@@ -2824,7 +3156,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/30/VX2480-1.jpg?w=500&h=500",
       "providerID": 17881,
       "createdAt": "04/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1453",
@@ -2832,7 +3165,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/2/18/60469_man_hinh_viewsonic_va3456_mhdj_1.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "23/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1245",
@@ -2840,7 +3174,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/2/huawei mateview 28 2.jpg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "18/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1756",
@@ -2848,7 +3183,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/8/msi-md241p-ultramarine-23.8-inch-fhd-ips.png?w=800&h=400",
       "providerID": 17876,
       "createdAt": "22/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1621",
@@ -2856,7 +3192,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/20/Màn hình gaming 24 inch E DRA (24 inch:FHD IPS:144hz) 1.jpeg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "27/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1214",
@@ -2864,7 +3201,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/29/37937_viewsonic_vg2440v_2.jpeg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "07/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1601",
@@ -2872,7 +3210,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/3/S2522HG 1.jpeg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "15/07/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1689",
@@ -2880,7 +3219,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/6/24/VX2776-SMHD_Front_VSA_l.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "12/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1837",
@@ -2888,7 +3228,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/13/VA 2409 MHU.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "25/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1647",
@@ -2896,15 +3237,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/31/AW2521H 1.jpeg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "03/11/2022",
-      "categoryId": "4"
-    },
-    {
-      "id": "2107",
-      "deviceName": "Màn hình di động Viewsonic VG1655",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-VG1655-ThinkPro-01.jpg?w=500&h=500",
-      "providerID": 17882,
-      "createdAt": "12/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2106",
@@ -2912,7 +3246,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-TD1655-ThinkPro-1.jpg?w=500&h=500",
       "providerID": 17879,
       "createdAt": "04/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2104",
@@ -2920,7 +3255,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-TD2423-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "14/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2103",
@@ -2928,7 +3264,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/Viewsonic-TD2223-ThinkPro-01.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "23/03/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2102",
@@ -2936,7 +3273,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/13/viewsonic-td1630-3-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "12/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2074",
@@ -2944,7 +3282,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/man-hinh-dell-ultrasharp-thinkpro-01.jpg?w=500&h=500",
       "providerID": 17882,
       "createdAt": "22/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1812",
@@ -2952,7 +3291,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/Gigabyte G24F thinkpro 1.jpeg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "13/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1814",
@@ -2960,7 +3300,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/GIGABYTE G27FCA THINKPRO 1.jpeg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "28/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1815",
@@ -2968,7 +3309,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/G27F 1.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "27/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1817",
@@ -2976,7 +3318,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/G27QCA 1.jpeg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "12/06/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1816",
@@ -2984,7 +3327,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/M27F A Gaming Monitor-03.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "10/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1820",
@@ -2992,7 +3336,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/M27Q 1.png?w=500&h=500",
       "providerID": 17884,
       "createdAt": "28/07/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1819",
@@ -3000,7 +3345,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/11/G27Q 1.jpeg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "29/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1823",
@@ -3008,7 +3354,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/G27Q 1.jpeg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "23/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1824",
@@ -3016,7 +3363,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/G27Q 1.jpeg?w=500&h=500",
       "providerID": 17880,
       "createdAt": "13/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1825",
@@ -3024,7 +3372,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/G32QCA 1.jpeg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "24/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1826",
@@ -3032,7 +3381,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/G32QCA 1.jpeg?w=500&h=500",
       "providerID": 17885,
       "createdAt": "19/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1827",
@@ -3040,7 +3390,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/G27Q 1.jpeg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "26/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1830",
@@ -3048,7 +3399,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/GIGABYTEG34WQCAEK01CF 1.jpeg?w=500&h=500",
       "providerID": 17886,
       "createdAt": "14/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1831",
@@ -3056,7 +3408,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/12/M34WQ 1.jpeg?w=500&h=500",
       "providerID": 17874,
       "createdAt": "10/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1832",
@@ -3064,7 +3417,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/13/AORUS FI27QP 1.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "01/11/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1833",
@@ -3072,7 +3426,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/13/AORUS FI32Q 1.jpg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "16/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1834",
@@ -3080,7 +3435,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/13/AORUS FI32U 1.png?w=500&h=500",
       "providerID": 17880,
       "createdAt": "20/07/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1835",
@@ -3088,7 +3444,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/13/VA2409-H 1 4.jpeg?w=500&h=500",
       "providerID": 17875,
       "createdAt": "04/06/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "2112",
@@ -3096,7 +3453,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/18/asus-proart-display-thinkpro-016.jpg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "23/06/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1586",
@@ -3104,7 +3462,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/21/Màn hình Viewsonic VP2756-4K (27inch:UHD:IPS:60Hz) 1.jpeg?w=500&h=500",
       "providerID": 17878,
       "createdAt": "16/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1579",
@@ -3112,7 +3471,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Màn Hình Thông Minh Samsung M8 (32 inch:4K:60hz) 89.png?w=500&h=500",
       "providerID": 17879,
       "createdAt": "26/03/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1620",
@@ -3120,7 +3480,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/25/GM34-CW2 1 (1).jpeg?w=500&h=500",
       "providerID": 17877,
       "createdAt": "02/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1619",
@@ -3128,7 +3489,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/25/GM32-FQ 1 (1).jpeg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "19/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1599",
@@ -3136,7 +3498,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/3/S2522HG 1.jpeg?w=500&h=500",
       "providerID": 17876,
       "createdAt": "06/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1583",
@@ -3144,7 +3507,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Màn hình ViewSonic VX3276-2K-MHD-2  1.png?w=500&h=500",
       "providerID": 17874,
       "createdAt": "15/06/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1260",
@@ -3152,7 +3516,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/14/Man-hinh-Viewsonic-VX2781-MH-(VX2781)-001.jpeg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "20/01/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1301",
@@ -3160,7 +3525,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/11/6/man-hinh-hkc-mb21v13-fhd.jpg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "26/09/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1386",
@@ -3168,7 +3534,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/backend/uploads/product/color_images/2021/12/15/thinkvision-m14t-62a3uar1ww-thinkpro.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "23/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1397",
@@ -3176,7 +3543,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/15/Man-hinh-may-tinh-Dell-S2421HN-23.8-inch-FHD-IPS-001.png?w=500&h=500",
       "providerID": 17877,
       "createdAt": "21/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1432",
@@ -3184,7 +3552,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/15/61113_man_hinh_dell_p2422h_5.jpeg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "03/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1485",
@@ -3192,7 +3561,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/3/10/Apple-Studio-Display-thinkpro-1.jpg?w=500&h=500",
       "providerID": 17883,
       "createdAt": "01/11/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1550",
@@ -3200,7 +3570,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/6/Ảnh chụp Màn hình 2022-04-06 lúc 14.15.30.png?w=500&h=500",
       "providerID": 17878,
       "createdAt": "27/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1567",
@@ -3208,7 +3579,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/15/VX2780 1.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "04/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1580",
@@ -3216,7 +3588,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Màn-hình-ViewSonic-VP2468A-_24-inch_FHD_60Hz_-9.jpg?w=500&h=500",
       "providerID": 17884,
       "createdAt": "16/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1581",
@@ -3224,7 +3597,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Màn hình ViewSonic VX3276-2K-MHD-2  1.png?w=500&h=500",
       "providerID": 17875,
       "createdAt": "15/06/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1582",
@@ -3232,7 +3606,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/19/Màn hình di động Viewsonic TD1655 (15.6inch:FHD:IPS:60Hz 1.png?w=500&h=500",
       "providerID": 17881,
       "createdAt": "02/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1585",
@@ -3240,7 +3615,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/21/Màn hình ViewSonic VG2740V (27inch:FHD:IPS:60Hz) 1.jpeg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "08/02/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1587",
@@ -3248,7 +3624,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/4/21/Màn hình di động ViewSonic VG1655 ((15.6inch:FHD:IPS:60hz) 1.png?w=500&h=500",
       "providerID": 17882,
       "createdAt": "07/10/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1600",
@@ -3256,7 +3633,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/3/S2722DGM 1.jpeg?w=500&h=500",
       "providerID": 17887,
       "createdAt": "16/08/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1603",
@@ -3264,7 +3642,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/7/11/Màn-hình-ViewSonic-VA2201-H-_22inch_VA_75Hz_-1.jpeg?w=500&h=500",
       "providerID": 17888,
       "createdAt": "09/05/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1608",
@@ -3272,7 +3651,8 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/25/Màn hình LG 27QN600-B (27 inch_2K_IPS_75Hz) 1.png?w=500&h=500",
       "providerID": 17886,
       "createdAt": "23/03/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
     },
     {
       "id": "1641",
@@ -3280,7 +3660,41 @@
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/5/30/VA24DQLB 1.jpg?w=500&h=500",
       "providerID": 17889,
       "createdAt": "01/04/2022",
-      "categoryId": "4"
+      "categoryId": "4",
+      "status": "1"
+    },
+    {
+      "id": 2161,
+      "deviceID": "faf3424",
+      "deviceName": "doan xem",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
+      "createdAt": "20/2-/1-09",
+      "providerID": "đâf",
+      "provider": "fafa",
+      "categoryId": "2",
+      "status": "1"
+    },
+    {
+      "id": 2162,
+      "deviceID": "faf342",
+      "deviceName": "doan xemm",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
+      "createdAt": "21/10/2022",
+      "providerID": "đa",
+      "provider": "fafa",
+      "categoryId": "4",
+      "status": "1"
+    },
+    {
+      "id": 2163,
+      "deviceID": "fafaf",
+      "deviceName": "don xem",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/9/30/surface-laptop-4-13-thinkpro-01.jpg?w=500&h=500",
+      "createdAt": "2022-11-08",
+      "providerID": "faff",
+      "provider": "faff",
+      "categoryId": "1",
+      "status": "1"
     }
   ],
   "users": [
