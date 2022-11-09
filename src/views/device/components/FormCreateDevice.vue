@@ -112,18 +112,6 @@ export default {
   props: ["editedItem", "listCategory"],
   data() {
     return {
-      defaultItem: {
-        id: this.$route.params.id,
-        deviceID: "",
-        deviceName: "",
-        deviceImage: null,
-        createdAt: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-          .toISOString()
-          .slice(0, 10),
-        providerID: "",
-        provider: "",
-        categoryId: "",
-      },
       date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
         .toISOString()
         .slice(0, 10),

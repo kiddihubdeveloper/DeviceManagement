@@ -123,15 +123,7 @@ export default {
         categoryId: "",
       },
       listCategory: [],
-      defaultItem: {
-        deviceID: "",
-        deviceName: "",
-        deviceImage: null,
-        createdAt: new Date(Date.now()).toISOString().slice(0, 10),
-        providerID: "",
-        provider: "",
-        categoryId: "",
-      },
+
       date: new Date(),
       menu: false,
       imagePreview: "",
