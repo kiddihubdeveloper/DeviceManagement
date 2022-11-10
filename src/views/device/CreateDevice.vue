@@ -1,7 +1,8 @@
 <template>
   <div>
     <v-card-title>
-      <span class="text-h5">Them thiet bi</span>
+      <v-icon @click="reload"> mdi-arrow-left</v-icon>
+      <span class="ml-3 text-h5">Them thiet bi</span>
     </v-card-title>
     <form-create-device
       :editedItem="editedItem"
@@ -22,6 +23,7 @@ export default {
       editedItem: {
         id: this.$route.params.id,
         deviceID: "",
+        deviceCode: "",
         deviceName: "",
         deviceImage: null,
         createdAt: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
@@ -40,6 +42,9 @@ export default {
       axios.get("http://localhost:3000/deviceCategories").then((res) => {
         this.listCategory = res.data;
       });
+    },
+    reload() {
+      this.$router.back();
     },
   },
   created() {
