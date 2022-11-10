@@ -1,7 +1,8 @@
 <template>
   <div>
     <v-card-title>
-      <span class="text-h5">Thay doi thiet bi</span>
+      <v-icon @click="reload"> mdi-arrow-left</v-icon>
+      <span class="ml-3 text-h5">Thay doi thiet bi</span>
     </v-card-title>
     <form-edit-device></form-edit-device>
   </div>
@@ -15,6 +16,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    reload() {
+      this.$router.back();
+    },
   },
 };
 </script>

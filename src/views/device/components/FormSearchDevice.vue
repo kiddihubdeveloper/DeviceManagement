@@ -3,7 +3,7 @@
     <v-radio-group
       v-model="keySearch.status"
       row
-      @change="onSearch"
+      @change="onSearchStatus"
       label="Trạng thái:"
     >
       <v-radio
@@ -13,12 +13,23 @@
         :value="option.value"
       ></v-radio>
     </v-radio-group>
+    <v-col class="d-flex" cols="12" sm="6">
+      <v-select
+        v-model="keySearch.categoryId"
+        :items="listCategory"
+        :item-text="'name'"
+        :item-value="'id'"
+        label="Loại thiết bị"
+        @change="onSearchDevice"
+        outlined
+      ></v-select>
+    </v-col>
   </form>
 </template>
 <script>
 import axios from "axios";
 export default {
-  props: ["keySearch"],
+  props: ["keySearch", "listCategory"],
   data: () => ({
     options: [
       { id: 1, label: "Tất cả", value: 0 },
@@ -30,8 +41,11 @@ export default {
   computed: {},
 
   methods: {
-    onSearch() {
-      this.$emit("on-Search");
+    onSearchStatus() {
+      this.onSearchDevice();
+    },
+    onSearchDevice() {
+      this.$emit("on-SearchDevice");
     },
   },
 };

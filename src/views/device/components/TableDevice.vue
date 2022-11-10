@@ -1,10 +1,10 @@
 <template>
-  <v-card width="150vh" class="mx-auto mt-5">
+  <v-card class="mx-5 my-4">
     <v-card-title>
       <v-text-field
         v-model="search"
         append-icon="mdi-magnify"
-        label="Search"
+        label="Search By Device Name Or By Type of Device"
         single-line
         hide-details
       ></v-text-field>
@@ -13,15 +13,19 @@
       :headers="headers"
       :items="items"
       :search="search"
-      :custom-filter="customSearch"
+      :custom-filter="filterDeviceName"
       show-select
+      @input="enterSelect($event)"
     >
       <template v-slot:top>
         <v-toolbar flat>
           <v-toolbar-title>Quản lý thiết bị</v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
-
+          <v-btn v-if="displayBtn" color="success" dark class="mb-2 mr-4">
+            Borrow
+            <v-icon>mdi-plus</v-icon>
+          </v-btn>
           <v-btn color="primary" dark class="mb-2" :to="'/create-device'">
             New Item
             <v-icon>mdi-plus</v-icon>
@@ -63,7 +67,17 @@
       </template>
 
       <template v-slot:[`item.categoryId`]="{ item }">
-        {{ listCategory[item.categoryId - 1].name }}
+        <div v-if="listCategory.length != 0">
+          {{ listCategory[item.categoryId - 1].name }}
+        </div>
+      </template>
+      <template v-slot:[`item.status`]="{ item }">
+        <div v-if="item.status === '1'">
+          <v-chip color="red"> Đã Mượn </v-chip>
+        </div>
+        <div v-else-if="item.status === '2'">
+          <v-chip color="green" class="row-pointer"> Chưa Mượn </v-chip>
+        </div>
       </template>
       <template v-slot:[`item.actions`]="{ item }">
         <v-btn class="mr-2" icon :to="'/edit-device/' + item.id">
@@ -86,12 +100,12 @@
 <script>
 import axios from "axios";
 export default {
-  props: ["items", "headers"],
+  props: ["items", "headers", "listCategory"],
   data() {
     return {
       dialogDelete: false,
       search: "",
-      listCategory: [],
+      displayBtn: false,
       id: "",
       snackbar: false,
     };
@@ -102,9 +116,8 @@ export default {
     } else {
       this.search = "";
     }
-    this.getCategories();
   },
-  computed: {},
+
   methods: {
     //delete product
     deleteItem(id) {
@@ -125,25 +138,35 @@ export default {
     closeDelete() {
       this.dialogDelete = false;
       this.id = "";
-      // this.$router.back();
     },
-    getCategories() {
-      axios.get("http://localhost:3000/deviceCategories").then((res) => {
-        this.listCategory = res.data;
-      });
-    },
-    customSearch(value, search, item) {
-      if (Array.isArray(value)) {
-        return value.some((item) =>
-          Object.values(item).some(
-            (v) => v && v.toString().toLowerCase().includes(search)
-          )
-        );
+
+    // select row of table display button borrow
+    enterSelect(values) {
+      console.log(values);
+      if (values == null || values.length == 0) {
+        this.displayBtn = false;
+      } else {
+        this.displayBtn = true;
       }
-      return Object.values(item).some(
-        (v) => v && v.toString().toLowerCase().includes(search)
+    },
+
+    // filter table by device Name
+    filterDeviceName(value, search, item) {
+      return (
+        value != null &&
+        search != null &&
+        typeof value === "string" &&
+        (item.deviceName.toString().indexOf(search) !== -1 ||
+          this.listCategory[item.categoryId - 1].name
+            .toString()
+            .indexOf(search) !== -1)
       );
     },
   },
 };
 </script>
+<style scoped>
+.row-pointer:hover {
+  cursor: pointer;
+}
+</style>
