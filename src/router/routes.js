@@ -41,6 +41,11 @@ const routes = [
                 component: load('user/UserPage'),
             },
             {
+                path: '/user-detail/:id',
+                name: 'user-detail',
+                component: load('user/UserDetailPage'),
+            },
+            {
                 path: '/:pathMatch(.*)*',
                 component: load('NotFoundPage'),
             }

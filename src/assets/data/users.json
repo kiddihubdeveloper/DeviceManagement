@@ -3,7 +3,6 @@
     "id": 17874,
     "provider_user_id": 17874,
     "role": "1",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 3,
     "provider": "KIDDIHUB",
     "username": "0123456789",
@@ -12,13 +11,16 @@
     "avatar": "https://ui-avatars.com/api/?name=0123456789&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-20 15:32:43",
     "updated_at": "2022-10-20 15:32:43",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1767"
+    ]
   },
   {
     "id": 17875,
     "provider_user_id": 17875,
     "role": "1",
-    "number_of_devices_borrowed": 3,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "wa6qnmIwCEc0FcJc",
@@ -27,13 +29,18 @@
     "avatar": "https://ui-avatars.com/api/?name=wa6qnmIwCEc0FcJc&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-10-20 15:56:11",
     "updated_at": "2022-10-20 15:56:11",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "1661",
+      "1883",
+      "1756"
+    ]
   },
   {
     "id": 17876,
     "provider_user_id": 17876,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "9Xsa3b11mOgNBNxH",
@@ -42,13 +49,17 @@
     "avatar": "https://ui-avatars.com/api/?name=9Xsa3b11mOgNBNxH&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-24 11:23:40",
     "updated_at": "2022-10-24 11:23:40",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "931",
+      "1776"
+    ]
   },
   {
     "id": 17877,
     "provider_user_id": 17877,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "8t9oO0Zs7qkkPao5",
@@ -57,13 +68,18 @@
     "avatar": "https://ui-avatars.com/api/?name=8t9oO0Zs7qkkPao5&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-10-25 10:55:18",
     "updated_at": "2022-10-25 10:55:18",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "1589",
+      "1585",
+      "1438"
+    ]
   },
   {
     "id": 17878,
     "provider_user_id": 17878,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "6r4MO94METev77sy",
@@ -72,13 +88,17 @@
     "avatar": "https://ui-avatars.com/api/?name=6r4MO94METev77sy&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-10-25 10:56:05",
     "updated_at": "2022-10-25 10:56:05",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "1537",
+      "1427"
+    ]
   },
   {
     "id": 17879,
     "provider_user_id": 17879,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "tXKOK2ffmvzOL657",
@@ -87,13 +107,14 @@
     "avatar": "https://ui-avatars.com/api/?name=tXKOK2ffmvzOL657&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-25 10:56:28",
     "updated_at": "2022-10-25 10:56:28",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17880,
     "provider_user_id": 17880,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "9qQQFdbiAltaYWUk",
@@ -102,13 +123,17 @@
     "avatar": "https://ui-avatars.com/api/?name=9qQQFdbiAltaYWUk&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-25 10:56:48",
     "updated_at": "2022-10-25 10:56:48",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "1720",
+      "1537"
+    ]
   },
   {
     "id": 17881,
     "provider_user_id": 17881,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "OBuTsEHs7uQ7Cq8N",
@@ -117,13 +142,14 @@
     "avatar": "https://ui-avatars.com/api/?name=OBuTsEHs7uQ7Cq8N&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-10-25 10:58:36",
     "updated_at": "2022-10-25 10:58:36",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17882,
     "provider_user_id": 17882,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "m61UsV1qgeVz1Vsk",
@@ -132,13 +158,14 @@
     "avatar": "https://ui-avatars.com/api/?name=m61UsV1qgeVz1Vsk&background=49986f&color=f8f9fa&size=99",
     "created_at": "2022-10-25 13:36:52",
     "updated_at": "2022-10-25 13:36:52",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17883,
     "provider_user_id": 17883,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "V1LviFPIVRy87JZK",
@@ -147,13 +174,18 @@
     "avatar": "https://ui-avatars.com/api/?name=V1LviFPIVRy87JZK&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-25 14:01:41",
     "updated_at": "2022-10-25 14:01:41",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "1608",
+      "2075",
+      "1767"
+    ]
   },
   {
     "id": 17884,
     "provider_user_id": 17884,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "GEYYo1u9cdGT8i7H",
@@ -162,13 +194,17 @@
     "avatar": "https://ui-avatars.com/api/?name=GEYYo1u9cdGT8i7H&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-25 14:45:19",
     "updated_at": "2022-10-25 14:45:19",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "1689",
+      "1228"
+    ]
   },
   {
     "id": 17885,
     "provider_user_id": 17885,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "ZptG271o1sgAaQp5",
@@ -177,13 +213,16 @@
     "avatar": "https://ui-avatars.com/api/?name=ZptG271o1sgAaQp5&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-10-25 14:55:12",
     "updated_at": "2022-10-25 14:55:12",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1219"
+    ]
   },
   {
     "id": 17886,
     "provider_user_id": 17886,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "facebook",
     "username": "phuongke20",
@@ -192,13 +231,14 @@
     "avatar": "https://ui-avatars.com/api/?name=phuongke20&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-26 09:14:09",
     "updated_at": "2022-10-26 09:14:09",
-    "phone": "0982654123"
+    "phone": "0982654123",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17887,
     "provider_user_id": 17887,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "facebook",
     "username": "phuongke2001",
@@ -207,13 +247,16 @@
     "avatar": "https://ui-avatars.com/api/?name=phuongke2001&background=49986f&color=f8f9fa&size=99",
     "created_at": "2022-10-26 09:16:08",
     "updated_at": "2022-11-01 10:23:58",
-    "phone": "0976542311"
+    "phone": "0976542311",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1777"
+    ]
   },
   {
     "id": 17888,
     "provider_user_id": 17888,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "dT87JT6WMH4pwtmb",
@@ -222,13 +265,16 @@
     "avatar": "https://ui-avatars.com/api/?name=dT87JT6WMH4pwtmb&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-26 10:12:45",
     "updated_at": "2022-10-26 10:12:45",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "887"
+    ]
   },
   {
     "id": 17889,
     "provider_user_id": 17889,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "1rg3IzoLtd8ohlEq",
@@ -237,13 +283,16 @@
     "avatar": "https://ui-avatars.com/api/?name=1rg3IzoLtd8ohlEq&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-26 11:34:46",
     "updated_at": "2022-10-26 11:34:46",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1460"
+    ]
   },
   {
     "id": 17890,
     "provider_user_id": 17890,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "2KDZG6HKUFJvQNG1",
@@ -252,13 +301,14 @@
     "avatar": "https://ui-avatars.com/api/?name=2KDZG6HKUFJvQNG1&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-10-26 15:08:54",
     "updated_at": "2022-10-26 15:08:54",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17891,
     "provider_user_id": 17891,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "mmfXvnOdTYBWhUXU",
@@ -267,13 +317,16 @@
     "avatar": "https://ui-avatars.com/api/?name=mmfXvnOdTYBWhUXU&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-26 16:01:15",
     "updated_at": "2022-10-26 16:01:15",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "2112"
+    ]
   },
   {
     "id": 17892,
     "provider_user_id": 17892,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "xHaKdZtZC2UsjDQw",
@@ -282,13 +335,16 @@
     "avatar": "https://ui-avatars.com/api/?name=xHaKdZtZC2UsjDQw&background=49986f&color=f8f9fa&size=99",
     "created_at": "2022-10-27 08:47:54",
     "updated_at": "2022-10-27 08:47:54",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1883"
+    ]
   },
   {
     "id": 17893,
     "provider_user_id": 17893,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "HYZ3sC8ebpHE7j0o",
@@ -297,13 +353,16 @@
     "avatar": "https://ui-avatars.com/api/?name=HYZ3sC8ebpHE7j0o&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-10-27 08:49:21",
     "updated_at": "2022-10-27 08:49:21",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "2111"
+    ]
   },
   {
     "id": 17894,
     "provider_user_id": 17894,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "ObBlgXRdWfN1jK7p",
@@ -312,13 +371,16 @@
     "avatar": "https://ui-avatars.com/api/?name=ObBlgXRdWfN1jK7p&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-27 10:09:19",
     "updated_at": "2022-10-27 10:09:19",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "416"
+    ]
   },
   {
     "id": 17895,
     "provider_user_id": 17895,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "BfE8lnxbqYXo7h45",
@@ -327,13 +389,14 @@
     "avatar": "https://ui-avatars.com/api/?name=BfE8lnxbqYXo7h45&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-27 14:30:13",
     "updated_at": "2022-10-27 14:30:13",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17896,
     "provider_user_id": 17896,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "7936YDXhrvR66fok",
@@ -342,13 +405,17 @@
     "avatar": "https://ui-avatars.com/api/?name=7936YDXhrvR66fok&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-27 14:30:48",
     "updated_at": "2022-10-27 14:30:48",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "1757",
+      "1273"
+    ]
   },
   {
     "id": 17897,
     "provider_user_id": 17897,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "vMUMeSDVR6T5Pj5Y",
@@ -357,13 +424,18 @@
     "avatar": "https://ui-avatars.com/api/?name=vMUMeSDVR6T5Pj5Y&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-10-27 14:40:04",
     "updated_at": "2022-10-27 14:40:04",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "1812",
+      "1386",
+      "1883"
+    ]
   },
   {
     "id": 17898,
     "provider_user_id": 17898,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "NHx6zq7sB63s2HRz",
@@ -372,13 +444,14 @@
     "avatar": "https://ui-avatars.com/api/?name=NHx6zq7sB63s2HRz&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-27 14:40:12",
     "updated_at": "2022-10-27 14:40:12",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17899,
     "provider_user_id": 17899,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "8aeONX6SRufoR3CX",
@@ -387,13 +460,16 @@
     "avatar": "https://ui-avatars.com/api/?name=8aeONX6SRufoR3CX&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-27 15:33:28",
     "updated_at": "2022-10-27 15:33:28",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1331"
+    ]
   },
   {
     "id": 17900,
     "provider_user_id": 17900,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "1hrZuK3iW7spE7mQ",
@@ -402,13 +478,14 @@
     "avatar": "https://ui-avatars.com/api/?name=1hrZuK3iW7spE7mQ&background=49986f&color=f8f9fa&size=99",
     "created_at": "2022-10-27 16:35:11",
     "updated_at": "2022-10-27 16:35:11",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17901,
     "provider_user_id": 17901,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "hHzeY9LVTyncG0yy",
@@ -417,13 +494,17 @@
     "avatar": "https://ui-avatars.com/api/?name=hHzeY9LVTyncG0yy&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-27 16:56:21",
     "updated_at": "2022-10-27 16:56:21",
-    "phone": "0968268601"
+    "phone": "0968268601",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "924",
+      "1952"
+    ]
   },
   {
     "id": 17902,
     "provider_user_id": 17902,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "fzIMvrOWfgHb20AF",
@@ -432,13 +513,16 @@
     "avatar": "https://ui-avatars.com/api/?name=fzIMvrOWfgHb20AF&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-10-27 17:03:36",
     "updated_at": "2022-10-27 17:03:36",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1621"
+    ]
   },
   {
     "id": 17903,
     "provider_user_id": 17903,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "Ecu2nRKfNZbqkXpG",
@@ -447,13 +531,18 @@
     "avatar": "https://ui-avatars.com/api/?name=Ecu2nRKfNZbqkXpG&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-10-27 17:08:28",
     "updated_at": "2022-10-27 17:08:28",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "509",
+      "1159",
+      "1832"
+    ]
   },
   {
     "id": 17904,
     "provider_user_id": 17904,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "C3knGsAkfou4eVvk",
@@ -462,13 +551,16 @@
     "avatar": "https://ui-avatars.com/api/?name=C3knGsAkfou4eVvk&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-10-28 10:09:19",
     "updated_at": "2022-10-28 10:09:19",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1498"
+    ]
   },
   {
     "id": 17905,
     "provider_user_id": 17905,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "JjUMr59T965kaOy7",
@@ -477,13 +569,16 @@
     "avatar": "https://ui-avatars.com/api/?name=JjUMr59T965kaOy7&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-11-01 11:16:38",
     "updated_at": "2022-11-01 11:16:38",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "292"
+    ]
   },
   {
     "id": 17906,
     "provider_user_id": 17906,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "0y3xVjfN4RalATXy",
@@ -492,13 +587,16 @@
     "avatar": "https://ui-avatars.com/api/?name=0y3xVjfN4RalATXy&background=dc3545&color=f8f9fa&size=99",
     "created_at": "2022-11-01 11:20:27",
     "updated_at": "2022-11-01 11:20:27",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1838"
+    ]
   },
   {
     "id": 17907,
     "provider_user_id": 17907,
     "role": "0",
-    "number_of_devices_borrowed": 2,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "hUjVraG8IWx3CESa",
@@ -507,13 +605,14 @@
     "avatar": "https://ui-avatars.com/api/?name=hUjVraG8IWx3CESa&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-11-01 11:25:30",
     "updated_at": "2022-11-01 11:25:30",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   },
   {
     "id": 17908,
     "provider_user_id": 17908,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "TzIdho9Xghpzz24Z",
@@ -522,13 +621,16 @@
     "avatar": "https://ui-avatars.com/api/?name=TzIdho9Xghpzz24Z&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-11-01 13:42:20",
     "updated_at": "2022-11-01 13:42:20",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1725"
+    ]
   },
   {
     "id": 17909,
     "provider_user_id": 17909,
     "role": "0",
-    "number_of_devices_borrowed": 1,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "tFeGZmE39EENaWtR",
@@ -537,13 +639,18 @@
     "avatar": "https://ui-avatars.com/api/?name=tFeGZmE39EENaWtR&background=49986f&color=f8f9fa&size=99",
     "created_at": "2022-11-01 13:44:28",
     "updated_at": "2022-11-01 13:44:28",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "1307",
+      "1465",
+      "1259"
+    ]
   },
   {
     "id": 17910,
     "provider_user_id": 17910,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "5aegbfryPjiMLE4I",
@@ -552,13 +659,18 @@
     "avatar": "https://ui-avatars.com/api/?name=5aegbfryPjiMLE4I&background=0D8ABC&color=f8f9fa&size=99",
     "created_at": "2022-11-01 13:59:26",
     "updated_at": "2022-11-01 13:59:26",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 3,
+    "device_borrowed_IDs": [
+      "912",
+      "1436",
+      "1837"
+    ]
   },
   {
     "id": 17911,
     "provider_user_id": 17911,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "8AF3oubQI9oaomg0",
@@ -567,13 +679,17 @@
     "avatar": "https://ui-avatars.com/api/?name=8AF3oubQI9oaomg0&background=21ba45&color=f8f9fa&size=99",
     "created_at": "2022-11-01 14:05:30",
     "updated_at": "2022-11-01 14:05:30",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 2,
+    "device_borrowed_IDs": [
+      "1967",
+      "1884"
+    ]
   },
   {
     "id": 17912,
     "provider_user_id": 17912,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "ikqCKZ7JopQwjsve",
@@ -582,13 +698,16 @@
     "avatar": "https://ui-avatars.com/api/?name=ikqCKZ7JopQwjsve&background=009688&color=f8f9fa&size=99",
     "created_at": "2022-11-01 14:20:10",
     "updated_at": "2022-11-01 14:20:10",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "1763"
+    ]
   },
   {
     "id": 17913,
     "provider_user_id": 17913,
     "role": "0",
-    "number_of_devices_borrowed": 2,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "lLTLUyybGwEBIkyG",
@@ -597,13 +716,16 @@
     "avatar": "https://ui-avatars.com/api/?name=lLTLUyybGwEBIkyG&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-11-01 15:03:19",
     "updated_at": "2022-11-01 15:03:19",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 1,
+    "device_borrowed_IDs": [
+      "2075"
+    ]
   },
   {
     "id": 17914,
     "provider_user_id": 17914,
     "role": "0",
-    "number_of_devices_borrowed": 0,
     "number_of_devices_provided": 1,
     "provider": "KIDDIHUB",
     "username": "mUjHd0qXgO96r8A6",
@@ -612,6 +734,8 @@
     "avatar": "https://ui-avatars.com/api/?name=mUjHd0qXgO96r8A6&background=e03997&color=f8f9fa&size=99",
     "created_at": "2022-11-01 15:20:15",
     "updated_at": "2022-11-01 15:56:33",
-    "phone": "NULL"
+    "phone": "NULL",
+    "number_of_devices_borrowed": 0,
+    "device_borrowed_IDs": []
   }
 ]
