@@ -31,9 +31,10 @@ const routes = [
                 component: load('device/EditDevice'),
             },
             {
-                path: '/search/:keyString',
+                path: '/search',
                 name: 'Key Search',
                 component: load('device/DevicePage'),
+                props: route => ({ query: route.query.deviceName })
             },
             {
                 path: '/user',
