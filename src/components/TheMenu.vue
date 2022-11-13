@@ -47,37 +47,42 @@ export default {
   data: () => ({
     drawer: null,
     productList: [
-      { productName: "Trang chu", icon: "mdi-forum", path: "/" },
+      { productName: "Trang chủ", icon: "mdi-forum", path: "/" },
       {
-        productName: "Them thiet bi",
+        productName: "Thêm thiết bị",
         icon: "mdi-view-dashboard",
         path: "/create-device",
       },
-      { productName: "Nguoi dung", icon: "mdi-forum", path: "/user" },
+      { productName: "Người dùng", icon: "mdi-account", path: "/user" },
       {
-        productName: "Laptop",
-        icon: "mdi-laptop",
-        path: "/search",
-        query: { deviceName: "laptop" },
+        productName: " Loại thiết bị",
+        icon: "mdi-package",
+        path: "/device-category",
       },
-      {
-        productName: "Keyboard",
-        icon: "mdi-keyboard",
-        path: "/search",
-        query: { deviceName: "keyboard" },
-      },
-      {
-        productName: "Mouse",
-        icon: "mdi-mouse",
-        path: "/search",
-        query: { deviceName: "mouse" },
-      },
-      {
-        productName: "Screen",
-        icon: "mdi-wiper",
-        path: "/search",
-        query: { deviceName: "screen" },
-      },
+      // {
+      //   productName: "Laptop",
+      //   icon: "mdi-laptop",
+      //   path: "/search",
+      //   query: { deviceName: "laptop" },
+      // },
+      // {
+      //   productName: "Keyboard",
+      //   icon: "mdi-keyboard",
+      //   path: "/search",
+      //   query: { deviceName: "keyboard" },
+      // },
+      // {
+      //   productName: "Mouse",
+      //   icon: "mdi-mouse",
+      //   path: "/search",
+      //   query: { deviceName: "mouse" },
+      // },
+      // {
+      //   productName: "Screen",
+      //   icon: "mdi-wiper",
+      //   path: "/search",
+      //   query: { deviceName: "screen" },
+      // },
     ],
   }),
   methods: {
