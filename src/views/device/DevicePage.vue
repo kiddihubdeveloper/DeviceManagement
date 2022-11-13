@@ -54,17 +54,11 @@ export default {
         } else {
           this.keySearch.categoryId = categoryId;
         }
-        console.log(this.keySearch.categoryId);
       },
       immediate: true,
     },
   },
   computed: {
-    getCategoryId() {
-      return this.$router.query.categoryId
-        ? (this.keySearch.categoryId = this.$router.query.categoryId)
-        : (this.keySearch.categoryId = 0);
-    },
     devices() {
       this.getDeviceByStatusOrCategory();
       return this.items;
