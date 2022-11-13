@@ -50,6 +50,7 @@ const routes = [
                 path: '/create-device-category',
                 name: 'Create Device Category',
                 component: load('deviceCategory/CreateDeviceCategory'),
+            },
             {
                 path: '/user-detail/:id',
                 name: 'user-detail',
