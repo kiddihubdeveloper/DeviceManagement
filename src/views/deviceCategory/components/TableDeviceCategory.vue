@@ -113,6 +113,12 @@ export default {
       this.dialogDelete = false;
       this.id = "";
     },
+
+    // getAmountDevice(id) {
+    //   axios.get(`http://localhost:3000/devices/${this.id}`).then((response) => {
+    //     return response.data.filter((device) => device.categoryId == id).length;
+    //   });
+    // },
   },
 };
 </script>

@@ -16,7 +16,7 @@
       "id": "3",
       "name": "mouse",
       "amountDevice": 61,
-      "deviceCode" : "MS"
+      "deviceCode": "MS"
     },
     {
       "id": "4",
@@ -27,14 +27,14 @@
     {
       "id": "5",
       "name": "phone",
-      "amountDevice": 0,
+      "amountDevice": 2,
       "deviceCode": "PH"
     },
     {
       "id": "6",
       "name": "Door",
-      "amountDevice": 0,
-      "deviceCode": "DO"
+      "amountDevice": 1,
+      "deviceCode": "Door"
     }
   ],
   "devices": [
@@ -4451,6 +4451,54 @@
       "providerID": "fff",
       "provider": "fffaf",
       "categoryId": "1",
+      "status": "2"
+    },
+    {
+      "id": 2165,
+      "deviceID": "",
+      "deviceCode": "LT35",
+      "deviceName": "laptoppppp",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
+      "createdAt": "15/02/2022",
+      "providerID": "dà",
+      "provider": "gâga",
+      "categoryId": "1",
+      "status": "2"
+    },
+    {
+      "id": 2166,
+      "deviceID": "",
+      "deviceCode": "LT34551",
+      "deviceName": "fzfa",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
+      "createdAt": "11/01/2022",
+      "providerID": "adada",
+      "provider": "đa",
+      "categoryId": "2",
+      "status": "2"
+    },
+    {
+      "id": 2167,
+      "deviceID": "",
+      "deviceCode": "Phone",
+      "deviceName": "fafa",
+      "deviceImage": null,
+      "createdAt": "06/11/2022",
+      "providerID": "teye",
+      "provider": "fqtt",
+      "categoryId": "5",
+      "status": "2"
+    },
+    {
+      "id": 2168,
+      "deviceID": "",
+      "deviceCode": "PH42424",
+      "deviceName": "Diên thoại samsung",
+      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/1/2375_lenovo_legion_5_pro_16iah7h_ct1_1600.png?w=500&h=500",
+      "createdAt": "02/11/2022",
+      "providerID": "1344",
+      "provider": "samsung",
+      "categoryId": "5",
       "status": "2"
     }
   ],

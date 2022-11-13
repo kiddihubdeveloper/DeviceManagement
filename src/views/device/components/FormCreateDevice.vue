@@ -17,11 +17,12 @@
             </v-col>
             <v-col cols="6" sm="6" md="6">
               <v-img
-                :src="editedItem.deviceImage ? editedItem.deviceImage : null"
+                :src="editedItem.deviceImage ? imagePreview : null"
                 height="auto"
-                width="10%"
+                width="7%"
               ></v-img>
             </v-col> -->
+
             <v-col cols="6" sm="6" md="6">
               <v-text-field
                 v-model="editedItem.deviceImage"
@@ -32,9 +33,9 @@
             </v-col>
             <v-col cols="6" sm="6" md="6">
               <v-img
-                :src="editedItem.deviceImage ? imagePreview : null"
+                :src="editedItem.deviceImage ? editedItem.deviceImage : null"
                 height="auto"
-                width="7%"
+                width="10%"
               ></v-img>
             </v-col>
           </v-row>
@@ -210,15 +211,24 @@ export default {
         this.snackbar = true;
       } else {
         this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
-        axios
-          .post("http://localhost:3000/devices", this.editedItem)
-          .then((res) => {
-            if (res.data.id != 0) {
-              DeviceEventBus.$emit("createSuccess", res.data.id);
-              this.$router.push("/");
-              console.log(this.editedItem);
-            }
-          });
+        this.listCategory[this.editedItem.categoryId - 1].amountDevice =
+          this.listCategory[this.editedItem.categoryId - 1].amountDevice + 1;
+        axios.all([
+          axios
+            .post("http://localhost:3000/devices", this.editedItem)
+            .then((res) => {
+              if (res.data.id != 0) {
+                DeviceEventBus.$emit("createSuccess", res.data.id);
+                this.$router.push("/");
+                console.log(this.editedItem.categoryId);
+              }
+            }),
+          axios.put(
+            `http://localhost:3000/deviceCategories/${this.editedItem.categoryId}`,
+            this.listCategory[this.editedItem.categoryId - 1]
+          ),
+        ]);
+
         this.close();
       }
     },

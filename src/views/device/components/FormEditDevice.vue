@@ -17,11 +17,12 @@
             </v-col>
             <v-col cols="6" sm="6" md="6">
               <v-img
-                :src="editedItem.deviceImage ? editedItem.deviceImage : null"
+                :src="editedItem.deviceImage ? imagePreview : null"
                 height="auto"
-                width="10%"
+                width="7%"
               ></v-img>
-            </v-col> -->
+            </v-col>
+             -->
             <v-col cols="6" sm="6" md="6">
               <v-text-field
                 v-model="editedItem.deviceImage"
@@ -32,9 +33,9 @@
             </v-col>
             <v-col cols="6" sm="6" md="6">
               <v-img
-                :src="editedItem.deviceImage ? imagePreview : null"
+                :src="editedItem.deviceImage ? editedItem.deviceImage : null"
                 height="auto"
-                width="7%"
+                width="10%"
               ></v-img>
             </v-col>
           </v-row>
