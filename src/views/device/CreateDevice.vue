@@ -2,7 +2,7 @@
   <div>
     <v-card-title>
       <v-icon @click="reload"> mdi-arrow-left</v-icon>
-      <span class="ml-3 text-h5">Them thiet bi</span>
+      <span class="ml-3 text-h5">Thêm thiết bị</span>
     </v-card-title>
     <form-create-device
       :editedItem="editedItem"

@@ -1,12 +1,15 @@
 <template>
   <div>
+    <v-card-title>
+      <span class="ml-3 text-h5">Trang chủ</span>
+    </v-card-title>
     <form-search-device
       :keySearch="keySearch"
       @on-SearchDevice="getDeviceByStatusOrCategory"
       :listCategory="listCategory"
     ></form-search-device>
     <table-device
-      :items="items"
+      :items="devices"
       :headers="headers"
       :listCategory="listCategory"
     ></table-device>
@@ -43,26 +46,37 @@ export default {
       listCategory: [],
     };
   },
+  watch: {
+    "$route.query.categoryId": {
+      handler(categoryId) {
+        if (!categoryId) {
+          this.keySearch.categoryId = 0;
+        } else {
+          this.keySearch.categoryId = categoryId;
+        }
+        console.log(this.keySearch.categoryId);
+      },
+      immediate: true,
+    },
+  },
+  computed: {
+    getCategoryId() {
+      return this.$router.query.categoryId
+        ? (this.keySearch.categoryId = this.$router.query.categoryId)
+        : (this.keySearch.categoryId = 0);
+    },
+    devices() {
+      this.getDeviceByStatusOrCategory();
+      return this.items;
+    },
+  },
   created() {
-    this.getDevices();
     this.getCategories();
     DeviceEventBus.$once("createSuccess", this.showMessageCreate);
     DeviceEventBus.$once("editSuccess", this.showMessageEdit);
   },
   methods: {
     // get list of devices
-    async getDevices() {
-      return axios
-        .get("http://localhost:3000/devices")
-        .then((response) => {
-          this.items = response.data;
-          console.log(this.items);
-        })
-        .catch((error) => {
-          throw error.response.data;
-        });
-    },
-
     getDeviceByStatusOrCategory() {
       axios
         .get("http://localhost:3000/devices")
@@ -71,20 +85,19 @@ export default {
             this.items = response.data;
           } else if (this.keySearch.status == 0) {
             this.items = response.data.filter(
-              (a) => a.categoryId == this.keySearch.categoryId
+              (d) => d.categoryId == this.keySearch.categoryId
             );
           } else if (this.keySearch.categoryId == 0) {
             this.items = response.data.filter(
-              (a) => a.status == this.keySearch.status
+              (d) => d.status == this.keySearch.status
             );
           } else {
             this.items = response.data.filter(
-              (a) =>
-                a.categoryId == this.keySearch.categoryId &&
-                a.status == this.keySearch.status
+              (d) =>
+                d.categoryId == this.keySearch.categoryId &&
+                d.status == this.keySearch.status
             );
           }
-          console.log(this.items);
         })
         .catch((error) => {
           throw error.response.data;
