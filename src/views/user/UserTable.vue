@@ -13,6 +13,7 @@
         :headers="headers"
         :items="users"
         :search="search"
+        :loading="loadTable"
         loading-text="Đang load dữ liệu...Vui lòng chờ một lát"
     >
       <template #top>
@@ -39,6 +40,13 @@
             height="50"
             width="50"
         />
+      </template>
+      <template #item.id="{ item }">
+        <router-link
+            :to="{ name:'user-detail', params: {id: item.id} }"
+        >
+          {{ item.id }}
+        </router-link>
       </template>
       <template #item.actions="{ item }">
         <v-tooltip bottom>
@@ -68,6 +76,7 @@
 
 import Users from '@/repositories/entities/UserRepository'
 import Swal from "sweetalert2";
+import { userRole } from "@/utils/state";
 
 export default {
   name: 'UserTable',
@@ -85,11 +94,9 @@ export default {
         {text: "Hành động", value: "actions", sortable: false, align: 'center'},
       ],
       users: [],
-      userRole: {
-        0: 'User',
-        1: 'Admin'
-      },
+      userRole,
       userFilter: "all",
+      loadTable: true
     }
   },
 
@@ -100,6 +107,7 @@ export default {
       Users.getAll()
           .then(response => {
             this.users = response.data
+            this.loadTable = false
           })
           .catch(error => {
             console.error(error)
@@ -111,6 +119,7 @@ export default {
       Users.getAll()
           .then(response => {
             this.users = response.data.filter(user => user.number_of_devices_borrowed > 0)
+            this.loadTable = false
           })
           .catch(error => {
             console.error(error)
@@ -142,7 +151,8 @@ export default {
                 timerProgressBar: true,
               }
           )
-          Users.deleteItem(item.id)
+          this.loadTable = true
+          Users.delete(item.id)
               .then(() => {
                 this.userFilter === "all" ? this.getData() : this.getUserBorrowed()
               })
@@ -156,6 +166,7 @@ export default {
 
   watch: {
     userFilter: function (newVal) {
+      this.loadTable = true
       if (newVal === "all") {
         this.getData()
       } else {

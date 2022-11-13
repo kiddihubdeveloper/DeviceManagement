@@ -46,11 +46,15 @@ const routes = [
                 name: 'Device Category',
                 component: load('deviceCategory/DeviceCategoryPage'),
             },
-            
             {
                 path: '/create-device-category',
                 name: 'Create Device Category',
                 component: load('deviceCategory/CreateDeviceCategory'),
+            {
+                path: '/user-detail/:id',
+                name: 'user-detail',
+                component: load('user/UserDetailPage'),
+
             },
             {
                 path: '/:pathMatch(.*)*',
