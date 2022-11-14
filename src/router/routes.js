@@ -6,9 +6,19 @@ function load(component) {
 
 const routes = [
     {
+        path: '/login',
+        name: 'Login',
+        component: load('auth/LoginPage'),
+    },
+    {
+        path: '/logout',
+        name: 'Logout',
+        component: load('auth/Logout'),
+    },
+    {
         path: '',
         component: DefaultLayout,
-        meta: { requiresAuth: true },
+        meta: {requiresAuth: true},
         children: [
             {
                 path: '/',

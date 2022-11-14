@@ -70,14 +70,18 @@ export default {
         productName: "Mouse",
         icon: "mdi-mouse",
         path: "/search",
-        query: { deviceName: "mouse" },
+        query: {deviceName: "mouse"},
       },
       {
         productName: "Screen",
         icon: "mdi-wiper",
         path: "/search",
-        query: { deviceName: "screen" },
+        query: {deviceName: "screen"},
       },
+      {
+        productName: "Logout",
+        path: "/logout",
+      }
     ],
   }),
   methods: {
