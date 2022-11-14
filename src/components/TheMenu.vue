@@ -8,15 +8,17 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-toolbar>
     <v-navigation-drawer v-model="drawer" fixed temporary width="330px">
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
+      <router-link :to="{ name:'user-detail', params: {id: user.id} }">
+        <v-list-item>
+          <v-list-item-avatar>
+            <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+          </v-list-item-avatar>
 
-        <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>John Leider</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </router-link>
 
       <v-divider></v-divider>
 
@@ -43,11 +45,15 @@
 </template>
 
 <script>
+
+import Storage from "@/utils/storage";
+
 export default {
   data: () => ({
+    user: Storage.get('user'),
     drawer: null,
     productList: [
-      { productName: "Trang chủ", icon: "mdi-forum", path: "/" },
+      {productName: "Trang chủ", icon: "mdi-forum", path: "/"},
       {
         productName: "Thêm thiết bị",
         icon: "mdi-view-dashboard",
@@ -96,6 +102,10 @@ export default {
       window.location.reload();
     },
   },
+  created() {
+    this.user = Storage.get('user');
+  },
+
 };
 </script>
 

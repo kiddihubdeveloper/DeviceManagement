@@ -76,7 +76,7 @@
 
 import Users from '@/repositories/entities/UserRepository'
 import Swal from "sweetalert2";
-import { userRole } from "@/utils/state";
+import {userRole} from "@/utils/state";
 
 export default {
   name: 'UserTable',
@@ -125,7 +125,6 @@ export default {
             console.error(error)
           })
     },
-
 
     //delete user
     deleteItem(item) {

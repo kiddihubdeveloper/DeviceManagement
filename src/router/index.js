@@ -12,7 +12,10 @@ const router = new VueRouter({
 
 // chuyển đến trang login nếu chưa được login
 router.beforeEach((to, from, next) => {
-  const publicPages = ['/login'];
+
+  const {requiresAdminAuth} = to.meta
+
+  const publicPages = ['/login', '/register'];
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = Storage.get('user');
 
@@ -20,7 +23,16 @@ router.beforeEach((to, from, next) => {
     return next('/login');
   }
 
-  next();
+  if (requiresAdminAuth) {
+    const user = Storage.get('user');
+    if (user && user["role"] === '1') {
+      return next();
+    }
+    alert('Bạn không có quyền truy cập trang này');
+  } else {
+    next();
+  }
+
 })
 
 export default router;
