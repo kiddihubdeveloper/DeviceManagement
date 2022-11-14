@@ -1,5 +1,5 @@
 <template>
-  <form class="" style="padding-left: 5em">
+  <form class="" style="padding-left: 2em">
     <v-radio-group
       v-model="keySearch.status"
       row

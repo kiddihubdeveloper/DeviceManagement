@@ -4,23 +4,26 @@
       <v-container>
         <v-form ref="form" lazy-validation>
           <v-row>
+            <!-- <v-col cols="6" sm="6" md="6">
+              <v-file-input
+                v-model="editedItem.deviceImage"
+                accept="image/png, image/jpeg, image/bmp"
+                prepend-icon="mdi-camera"
+                @change="selectImage"
+                @click:clear="clearImagePreview()"
+                label="Ảnh thiết bị"
+                placeholder="Pick an image"
+              ></v-file-input>
+            </v-col>
             <v-col cols="6" sm="6" md="6">
-              <!-- <v-text-field
-              v-model="editedItem.deviceImage"
-              accept="image/png, image/jpeg, image/bmp"
-              prepend-icon="mdi-camera"
-              @change="selectImage"
-              @click:clear="clearImagePreview()"
-              label="Ảnh thiết bị"
-              placeholder="Pick an image"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="6" sm="6" md="6">
-            <v-img
-              :src="editedItem.deviceImage ? imagePreview : null"
-              height="auto"
-              width="7%"
-            ></v-img> -->
+              <v-img
+                :src="editedItem.deviceImage ? imagePreview : null"
+                height="auto"
+                width="7%"
+              ></v-img>
+            </v-col>
+             -->
+            <v-col cols="6" sm="6" md="6">
               <v-text-field
                 v-model="editedItem.deviceImage"
                 prepend-icon="mdi-camera"
@@ -188,7 +191,9 @@ export default {
           reader.readAsDataURL(f);
         });
       const data = await readData(file);
-      this.editedItem.productPicture = data;
+      this.imagePreview = data;
+      this.editedItem.deviceImage = this.imagePreview;
+      console.log(file.name);
     },
     async clearImagePreview() {
       this.editedIndex.deviceImage = null;

@@ -4,24 +4,26 @@
       <v-container>
         <v-form ref="form" lazy-validation>
           <v-row>
+            <!-- <v-col cols="6" sm="6" md="6">
+              <v-file-input
+                v-model="editedItem.deviceImage"
+                accept="image/png, image/jpeg, image/bmp"
+                prepend-icon="mdi-camera"
+                @change="selectImage"
+                @click:clear="clearImagePreview()"
+                label="Ảnh thiết bị"
+                placeholder="Pick an image"
+              ></v-file-input>
+            </v-col>
             <v-col cols="6" sm="6" md="6">
-              <!-- <v-col>
-                <v-text-field
-              v-model="editedItem.deviceImage"
-              accept="image/png, image/jpeg, image/bmp"
-              prepend-icon="mdi-camera"
-              @change="selectImage"
-              @click:clear="clearImagePreview()"
-              label="Ảnh thiết bị"
-              placeholder="Pick an image"
-            ></v-text-field>
-          </v-col>
-          <v-col cols="6" sm="6" md="6">
-            <v-img
-              :src="editedItem.deviceImage ? imagePreview : null"
-              height="auto"
-              width="7%"
-            ></v-img> -->
+              <v-img
+                :src="editedItem.deviceImage ? imagePreview : null"
+                height="auto"
+                width="7%"
+              ></v-img>
+            </v-col> -->
+
+            <v-col cols="6" sm="6" md="6">
               <v-text-field
                 v-model="editedItem.deviceImage"
                 prepend-icon="mdi-camera"
@@ -66,7 +68,6 @@
               </v-select>
             </v-col>
           </v-row>
-
           <v-row>
             <v-col cols="12" sm="6" md="4">
               <v-menu
@@ -118,7 +119,6 @@
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
       <v-snackbar v-model="snackbar">
         Vui lòng điền đầy đủ trường bắt buộc
-
         <template v-slot:action="{ attrs }">
           <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
             Close
@@ -143,7 +143,6 @@ export default {
       modal: false,
       datepick: false,
       snackbar: false,
-
       // imagePreview: "",
     };
   },
@@ -212,15 +211,24 @@ export default {
         this.snackbar = true;
       } else {
         this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
-        axios
-          .post("http://localhost:3000/devices", this.editedItem)
-          .then((res) => {
-            if (res.data.id != 0) {
-              DeviceEventBus.$emit("createSuccess", res.data.id);
-              this.$router.push("/");
-              console.log(this.editedItem);
-            }
-          });
+        this.listCategory[this.editedItem.categoryId - 1].amountDevice =
+          this.listCategory[this.editedItem.categoryId - 1].amountDevice + 1;
+        axios.all([
+          axios
+            .post("http://localhost:3000/devices", this.editedItem)
+            .then((res) => {
+              if (res.data.id != 0) {
+                DeviceEventBus.$emit("createSuccess", res.data.id);
+                this.$router.push("/");
+                console.log(this.editedItem.categoryId);
+              }
+            }),
+          axios.put(
+            `http://localhost:3000/deviceCategories/${this.editedItem.categoryId}`,
+            this.listCategory[this.editedItem.categoryId - 1]
+          ),
+        ]);
+
         this.close();
       }
     },

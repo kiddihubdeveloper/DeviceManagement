@@ -41,10 +41,10 @@ const routes = [
                 component: load('device/EditDevice'),
             },
             {
-                path: '/search',
+                path: '/category',
                 name: 'Key Search',
                 component: load('device/DevicePage'),
-                props: route => ({ query: route.query.deviceName })
+                props: route => ({ query: route.query.categoryId })
             },
             {
                 path: '/user',
@@ -52,9 +52,20 @@ const routes = [
                 component: load('user/UserPage'),
             },
             {
+                path: '/device-category',
+                name: 'Device Category',
+                component: load('deviceCategory/DeviceCategoryPage'),
+            },
+            {
+                path: '/create-device-category',
+                name: 'Create Device Category',
+                component: load('deviceCategory/CreateDeviceCategory'),
+            },
+            {
                 path: '/user-detail/:id',
                 name: 'user-detail',
                 component: load('user/UserDetailPage'),
+
             },
             {
                 path: '/:pathMatch(.*)*',
