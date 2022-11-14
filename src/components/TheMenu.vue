@@ -53,36 +53,42 @@ export default {
         icon: "mdi-view-dashboard",
         path: "/create-device",
       },
-      { productName: "Người dùng", icon: "mdi-account", path: "/user" },
+      {productName: "Người dùng", icon: "mdi-account", path: "/user"},
       {
         productName: " Loại thiết bị",
         icon: "mdi-package",
         path: "/device-category",
       },
-      // {
-      //   productName: "Laptop",
-      //   icon: "mdi-laptop",
-      //   path: "/search",
-      //   query: { deviceName: "laptop" },
-      // },
-      // {
-      //   productName: "Keyboard",
-      //   icon: "mdi-keyboard",
-      //   path: "/search",
-      //   query: { deviceName: "keyboard" },
-      // },
-      // {
-      //   productName: "Mouse",
-      //   icon: "mdi-mouse",
-      //   path: "/search",
-      //   query: { deviceName: "mouse" },
-      // },
-      // {
-      //   productName: "Screen",
-      //   icon: "mdi-wiper",
-      //   path: "/search",
-      //   query: { deviceName: "screen" },
-      // },
+      {
+        productName: "Laptop",
+        icon: "mdi-laptop",
+        path: "/search",
+        query: {deviceName: "laptop"},
+      },
+      {
+        productName: "Keyboard",
+        icon: "mdi-keyboard",
+        path: "/search",
+        query: {deviceName: "keyboard"},
+      },
+      {
+        productName: "Mouse",
+        icon: "mdi-mouse",
+        path: "/search",
+        query: {deviceName: "mouse"},
+      },
+      {
+        productName: "Screen",
+        icon: "mdi-wiper",
+        path: "/search",
+        query: {deviceName: "screen"},
+      },
+      {},
+      {
+        productName: "Logout",
+        icon: "mdi-logout",
+        path: "/logout",
+      }
     ],
   }),
   methods: {
