@@ -148,11 +148,11 @@ export default {
   },
 
   created() {
+    // default id for device
     axios.get("http://localhost:3000/devices").then((res) => {
       this.editedItem.id =
         parseInt(res.data.sort((a, b) => a.id - b.id)[res.data.length - 1].id) +
         1;
-      console.log(this.editedItem.id);
     });
   },
 
@@ -189,7 +189,6 @@ export default {
     },
 
     close() {
-      this.editedItem.deviceID = "";
       this.editedItem.deviceImage = null;
       this.editedItem.deviceName = "";
       this.editedItem.createdAt = new Date(Date.now())
@@ -211,6 +210,7 @@ export default {
         this.snackbar = true;
       } else {
         this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
+        console.log(this.editedItem.categoryId);
         this.listCategory[this.editedItem.categoryId - 1].amountDevice =
           this.listCategory[this.editedItem.categoryId - 1].amountDevice + 1;
         axios.all([
@@ -220,7 +220,6 @@ export default {
               if (res.data.id != 0) {
                 DeviceEventBus.$emit("createSuccess", res.data.id);
                 this.$router.push("/");
-                console.log(this.editedItem.categoryId);
               }
             }),
           axios.put(

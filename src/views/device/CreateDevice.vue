@@ -22,7 +22,6 @@ export default {
     return {
       editedItem: {
         id: this.$route.params.id,
-        deviceID: "",
         deviceCode: "",
         deviceName: "",
         deviceImage: null,
@@ -41,6 +40,7 @@ export default {
     getCategories() {
       axios.get("http://localhost:3000/deviceCategories").then((res) => {
         this.listCategory = res.data;
+        console.log(this.listCategory);
       });
     },
     reload() {

@@ -72,6 +72,11 @@ const routes = [
                 meta: {requiresAdminAuth: false},
             },
             {
+                path: '/edit-device-category/:id',
+                name: 'Edit Device Category',
+                component: load('deviceCategory/EditDeviceCategory'),
+            },
+            {
                 path: '/user-detail/:id',
                 name: 'user-detail',
                 component: load('user/UserDetailPage'),

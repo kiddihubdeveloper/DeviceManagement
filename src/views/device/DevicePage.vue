@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-card-title>
+      <v-icon @click="reload"> mdi-arrow-left</v-icon>
       <span class="ml-3 text-h5">Trang chủ</span>
     </v-card-title>
     <form-search-device
@@ -54,13 +55,13 @@ export default {
         } else {
           this.keySearch.categoryId = categoryId;
         }
+        this.getDeviceByStatusOrCategory();
       },
       immediate: true,
     },
   },
   computed: {
     devices() {
-      this.getDeviceByStatusOrCategory();
       return this.items;
     },
   },
@@ -70,6 +71,9 @@ export default {
     DeviceEventBus.$once("editSuccess", this.showMessageEdit);
   },
   methods: {
+    reload() {
+      this.$router.back();
+    },
     // get list of devices
     getDeviceByStatusOrCategory() {
       axios
@@ -105,6 +109,7 @@ export default {
       });
     },
 
+    // notifications messages after create device
     showMessageCreate() {
       Swal.fire({
         icon: "success",
@@ -115,6 +120,7 @@ export default {
         timerProgressBar: true,
       });
     },
+    // notifications messages after edit device
     showMessageEdit() {
       Swal.fire({
         icon: "success",

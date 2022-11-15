@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import FormCreateDeviceCategory from "./components/FormCreateDeviceCategory.vue";
 export default {
   components: {
@@ -22,8 +23,17 @@ export default {
         id: "",
         name: "",
         amountDevice: 0,
+        deviceCode: "",
       },
     };
+  },
+  created() {
+    // default id device category
+    axios.get("http://localhost:3000/deviceCategories").then((res) => {
+      this.itemCategory.id =
+        parseInt(res.data.sort((a, b) => a.id - b.id)[res.data.length - 1].id) +
+        1;
+    });
   },
   methods: {
     reload() {

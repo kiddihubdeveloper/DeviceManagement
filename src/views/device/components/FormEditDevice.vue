@@ -74,6 +74,7 @@
                 :items="listCategory"
                 :item-text="'name'"
                 :item-value="'id'"
+                disabled
               >
               </v-select>
             </v-col>
@@ -125,14 +126,14 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
+      <v-btn color="blue darken-1" text @click="reset"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
       <v-snackbar v-model="snackbar">
         Vui lòng điền đầy đủ trường bắt buộc
 
         <template v-slot:action="{ attrs }">
           <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
-            Close
+            Reset
           </v-btn>
         </template>
       </v-snackbar>
@@ -148,7 +149,6 @@ export default {
     return {
       id: this.$route.params.id,
       editedItem: {
-        deviceID: "",
         deviceCode: "",
         deviceName: "",
         deviceImage: null,
@@ -198,7 +198,8 @@ export default {
     async clearImagePreview() {
       this.editedIndex.deviceImage = null;
     },
-    close() {
+    // click button reset
+    reset() {
       this.editedItem.deviceID = "";
       this.editedItem.deviceImage = null;
       this.editedItem.deviceName = "";
@@ -210,6 +211,7 @@ export default {
       this.editedItem.categoryId = "";
     },
 
+    // click button save
     save() {
       this.$refs.form.validate();
       if (
@@ -231,9 +233,7 @@ export default {
               console.log(this.editedItem);
             }
           });
-
-        //Storage.store("devices", this.items);
-        this.close();
+        this.reset();
       }
     },
     getCategories() {
