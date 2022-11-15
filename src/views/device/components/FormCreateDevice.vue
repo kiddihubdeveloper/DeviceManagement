@@ -115,7 +115,7 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
+      <v-btn color="blue darken-1" text @click="reset"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
       <v-snackbar v-model="snackbar">
         Vui lòng điền đầy đủ trường bắt buộc
@@ -143,6 +143,7 @@ export default {
       modal: false,
       datepick: false,
       snackbar: false,
+      itemCategory: [],
       // imagePreview: "",
     };
   },
@@ -188,7 +189,7 @@ export default {
       this.editedIndex.deviceImage = null;
     },
 
-    close() {
+    reset() {
       this.editedItem.deviceImage = null;
       this.editedItem.deviceName = "";
       this.editedItem.createdAt = new Date(Date.now())
@@ -211,8 +212,12 @@ export default {
       } else {
         this.editedItem.createdAt = this.formatDate(this.editedItem.createdAt);
         console.log(this.editedItem.categoryId);
-        this.listCategory[this.editedItem.categoryId - 1].amountDevice =
-          this.listCategory[this.editedItem.categoryId - 1].amountDevice + 1;
+        this.itemCategory = this.listCategory.filter(
+          (c) => c.id === this.editedItem.categoryId
+        );
+        this.itemCategory[0].amountDevice =
+          this.itemCategory[0].amountDevice + 1;
+
         axios.all([
           axios
             .post("http://localhost:3000/devices", this.editedItem)
@@ -224,12 +229,13 @@ export default {
             }),
           axios.put(
             `http://localhost:3000/deviceCategories/${this.editedItem.categoryId}`,
-            this.listCategory[this.editedItem.categoryId - 1]
+            this.itemCategory[0]
           ),
         ]);
-
-        this.close();
       }
+      this.editedItem.createdAt = new Date(Date.now())
+        .toISOString()
+        .slice(0, 10);
     },
   },
 };

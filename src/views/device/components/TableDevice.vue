@@ -108,7 +108,8 @@ export default {
       displayBtn: false,
       id: "",
       snackbar: false,
-      itemCategory: "",
+      itemCategoryId: "",
+      itemCategory: [],
     };
   },
   created() {},
@@ -117,23 +118,25 @@ export default {
     //delete product
     deleteItem(id) {
       axios.get(`http://localhost:3000/devices/${id}`).then((res) => {
-        this.itemCategory = res.data.categoryId;
+        this.itemCategoryId = res.data.categoryId;
+        this.itemCategory = this.listCategory.filter(
+          (c) => c.id === this.itemCategoryId
+        );
       });
       this.dialogDelete = true;
       this.id = id;
-      console.log(this.id);
     },
 
     // form comfirm delete product
     deleteItemConfirm() {
       if (this.id != "") {
-        this.listCategory[this.itemCategory - 1].amountDevice =
-          this.listCategory[this.itemCategory - 1].amountDevice - 1;
+        this.itemCategory[0].amountDevice =
+          this.itemCategory[0].amountDevice - 1;
         axios.all([
           axios.delete(`http://localhost:3000/devices/${this.id}`),
           axios.put(
-            `http://localhost:3000/deviceCategories/${this.itemCategory}`,
-            this.listCategory[this.itemCategory - 1]
+            `http://localhost:3000/deviceCategories/${this.itemCategoryId}`,
+            this.itemCategory[0]
           ),
         ]);
         this.snackbar = true;
