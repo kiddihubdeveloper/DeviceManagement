@@ -40,7 +40,6 @@ export default {
     getCategories() {
       axios.get("http://localhost:3000/deviceCategories").then((res) => {
         this.listCategory = res.data;
-        console.log(this.listCategory);
       });
     },
     reload() {

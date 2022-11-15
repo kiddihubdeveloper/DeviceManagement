@@ -27,20 +27,14 @@
     {
       "id": "5",
       "name": "phone",
-      "amountDevice": 3,
+      "amountDevice": 2,
       "deviceCode": "PH"
     },
     {
       "id": "6",
       "name": "Door",
-      "amountDevice": 1,
+      "amountDevice": 2,
       "deviceCode": "DR"
-    },
-    {
-      "id": 7,
-      "name": "Tsgt",
-      "amountDevice": 1,
-      "deviceCode": "TS"
     }
   ],
   "devices": [
@@ -50,7 +44,7 @@
       "deviceCode": "MT213",
       "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/8/30/envy 15 1 Trung bình.jpeg?w=500&h=500",
       "providerID": 17888,
-      "createdAt": "15/02/2022",
+      "createdAt": "05/01/2022",
       "categoryId": "1",
       "provider": "Acer",
       "status": "1"
@@ -3521,17 +3515,6 @@
       "status": "1"
     },
     {
-      "id": "2098",
-      "deviceName": "Bàn di chuột nỉ HyperWork 80x40",
-      "deviceCode": "LT123",
-      "deviceImage": "https://media-api-beta.thinkpro.vn/media/core/products/2022/10/11/Ảnh chụp Màn hình 2022-10-11 lúc 16.20.55.png?w=500&h=500",
-      "providerID": 17874,
-      "createdAt": "09/03/2022",
-      "categoryId": "3",
-      "provider": "Samsung",
-      "status": "1"
-    },
-    {
       "id": "1317",
       "deviceName": "Chuột ASUS ROG Gladius III",
       "deviceCode": "LT123",
@@ -4489,17 +4472,6 @@
       "status": "2"
     },
     {
-      "id": 2169,
-      "deviceCode": "PH42455",
-      "deviceName": "iphone 14 pro max",
-      "deviceImage": "https://i1-dulich.vnecdn.net/2022/05/27/du-lich-Viet-Nam-3-1653637304.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=yUXZ46ZNqiR8rLo_5TB6tg",
-      "createdAt": "03/11/2022",
-      "providerID": "24414",
-      "provider": "Iphone",
-      "categoryId": "5",
-      "status": "2"
-    },
-    {
       "id": 2170,
       "deviceCode": "PH323",
       "deviceName": "nokia",
@@ -4511,25 +4483,36 @@
       "status": "2"
     },
     {
-      "id": 2171,
-      "deviceCode": "DR5252",
+      "id": 2172,
+      "deviceCode": "MS41414",
+      "deviceName": "Chuột cá sấu",
+      "deviceImage": "https://st.quantrimang.com/photos/image/2021/01/18/anh-hoan-hao-1.jpg",
+      "createdAt": "01/11/2022",
+      "providerID": "4552",
+      "provider": "Cá mập",
+      "categoryId": "3",
+      "status": "2"
+    },
+    {
+      "id": 2173,
+      "deviceCode": "DR35",
       "deviceName": "Cửa sổ",
-      "deviceImage": "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/5/26/913299/Ngan-Ha24.jpg",
-      "createdAt": "11/09/2022",
-      "providerID": "425",
+      "deviceImage": null,
+      "createdAt": "1/13/2022",
+      "providerID": "2441",
       "provider": "Hòa phát",
       "categoryId": "6",
       "status": "2"
     },
     {
-      "id": 2172,
-      "deviceCode": "TS5363",
-      "deviceName": "Fgg gs ",
+      "id": 2174,
+      "deviceCode": "DR",
+      "deviceName": "gaga",
       "deviceImage": null,
-      "createdAt": "01/11/2022",
-      "providerID": "4636",
-      "provider": "ầggs",
-      "categoryId": 7,
+      "createdAt": "03/11/2022",
+      "providerID": "341",
+      "provider": "gaga",
+      "categoryId": "6",
       "status": "2"
     }
   ],

@@ -82,7 +82,6 @@ export default {
               this.$router.push("/device-category");
             }
           });
-        this.reset();
       }
     },
   },

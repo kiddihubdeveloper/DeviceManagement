@@ -36,7 +36,12 @@ export default {
         { text: "Ảnh thiết bị", value: "deviceImage", sortable: false },
         { text: "Nhà cung cấp", value: "providerID" },
         { text: "Loại thiết bị", value: "categoryId" },
-        { text: "Trạng thái", value: "status" },
+        {
+          text: "Trạng thái",
+          value: "status",
+          align: "center",
+          sortable: false,
+        },
         { text: "Actions", value: "actions", sortable: false },
       ],
       items: [],
