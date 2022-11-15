@@ -108,6 +108,7 @@ export default {
       displayBtn: false,
       id: "",
       snackbar: false,
+      itemCategory: "",
     };
   },
   created() {},
@@ -115,6 +116,9 @@ export default {
   methods: {
     //delete product
     deleteItem(id) {
+      axios.get(`http://localhost:3000/devices/${id}`).then((res) => {
+        this.itemCategory = res.data.categoryId;
+      });
       this.dialogDelete = true;
       this.id = id;
       console.log(this.id);
@@ -123,7 +127,15 @@ export default {
     // form comfirm delete product
     deleteItemConfirm() {
       if (this.id != "") {
-        axios.delete(`http://localhost:3000/devices/${this.id}`);
+        this.listCategory[this.itemCategory - 1].amountDevice =
+          this.listCategory[this.itemCategory - 1].amountDevice - 1;
+        axios.all([
+          axios.delete(`http://localhost:3000/devices/${this.id}`),
+          axios.put(
+            `http://localhost:3000/deviceCategories/${this.itemCategory}`,
+            this.listCategory[this.itemCategory - 1]
+          ),
+        ]);
         this.snackbar = true;
         this.items = this.items.filter((device) => device.id != this.id);
         this.closeDelete();

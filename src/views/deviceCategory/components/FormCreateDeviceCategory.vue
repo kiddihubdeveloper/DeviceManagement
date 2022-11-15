@@ -8,7 +8,7 @@
               <v-text-field
                 v-model="itemCategory.id"
                 label="ID loại thiết bị"
-                :rules="[(v) => !!v || ' Vui lòng điền id thiết bị']"
+                disabled
               ></v-text-field>
             </v-col>
             <v-col cols="6" sm="12" md="6">
@@ -19,16 +19,24 @@
               ></v-text-field>
             </v-col>
           </v-row>
+          <v-row>
+            <v-col cols="12" sm="12" md="6">
+              <v-text-field
+                v-model="itemCategory.deviceCode"
+                label="Mã loại thiết bị"
+                :rules="[(v) => !!v || ' Vui lòng điền mã loại thiết bị']"
+              ></v-text-field>
+            </v-col>
+          </v-row>
         </v-form>
       </v-container>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="blue darken-1" text @click="close"> Reset </v-btn>
+      <v-btn color="blue darken-1" text @click="reset"> Reset </v-btn>
       <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
       <v-snackbar v-model="snackbar">
         Vui lòng điền đầy đủ trường bắt buộc
-
         <template v-slot:action="{ attrs }">
           <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
             Close
@@ -49,17 +57,21 @@ export default {
       snackbar: false,
     };
   },
+
   methods: {
     reload() {
       this.$router.back();
     },
-    close() {
+    // click button reset
+    reset() {
       this.itemCategory.id = "";
       this.itemCategory.name = "";
     },
+    // click button save
     save() {
+      // check validate
       this.$refs.form.validate();
-      if (this.itemCategory.id == "" || this.itemCategory.name == "") {
+      if (this.itemCategory.deviceCode == "" || this.itemCategory.name == "") {
         this.snackbar = true;
       } else {
         axios
@@ -70,7 +82,7 @@ export default {
               this.$router.push("/device-category");
             }
           });
-        this.close();
+        this.reset();
       }
     },
   },

@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-card-title>
+      <v-icon @click="reload"> mdi-arrow-left</v-icon>
       <span class="ml-3 text-h5">Trang loại thiết bị</span>
     </v-card-title>
 
@@ -40,9 +41,12 @@ export default {
   created() {
     this.getDeviceCategories();
     DeviceCategoryEventBus.$once("createSuccess", this.showMessageCreate);
-    //   DeviceEventBus.$once("editSuccess", this.showMessageEdit);
+    DeviceCategoryEventBus.$once("editSuccess", this.showMessageEdit);
   },
   methods: {
+    reload() {
+      this.$router.back();
+    },
     // get list of devices
     async getDeviceCategories() {
       return axios
@@ -55,41 +59,7 @@ export default {
         });
     },
 
-    getDeviceByStatusOrCategory() {
-      axios
-        .get("http://localhost:3000/devices")
-        .then((response) => {
-          if (this.keySearch.status == 0 && this.keySearch.categoryId == 0) {
-            this.items = response.data;
-          } else if (this.keySearch.status == 0) {
-            this.items = response.data.filter(
-              (a) => a.categoryId == this.keySearch.categoryId
-            );
-          } else if (this.keySearch.categoryId == 0) {
-            this.items = response.data.filter(
-              (a) => a.status == this.keySearch.status
-            );
-          } else {
-            this.items = response.data.filter(
-              (a) =>
-                a.categoryId == this.keySearch.categoryId &&
-                a.status == this.keySearch.status
-            );
-          }
-          console.log(this.items);
-        })
-        .catch((error) => {
-          throw error.response.data;
-        });
-    },
-
-    // get list categories
-    getCategories() {
-      axios.get("http://localhost:3000/deviceCategories").then((res) => {
-        this.listCategory = res.data;
-      });
-    },
-
+    // notifications messages after create device
     showMessageCreate() {
       Swal.fire({
         icon: "success",
@@ -100,11 +70,12 @@ export default {
         timerProgressBar: true,
       });
     },
+    // notifications messages after edit device
     showMessageEdit() {
       Swal.fire({
         icon: "success",
-        title: "Đã sửa thông tin thiết bị",
-        text: "Thiết bị được sửa thành công.",
+        title: "Đã sửa thông tin loại thiết bị",
+        text: "Thiết bị được sửa cập nhật theo loại thiết bị.",
         showConfirmButton: false,
         timer: 1200,
         timerProgressBar: true,

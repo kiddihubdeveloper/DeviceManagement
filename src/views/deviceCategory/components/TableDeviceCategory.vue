@@ -101,7 +101,23 @@ export default {
     // form comfirm delete product
     deleteItemConfirm() {
       if (this.id != "") {
-        axios.delete(`http://localhost:3000/deviceCategories/${this.id}`);
+        axios.all([
+          axios.delete(`http://localhost:3000/deviceCategories/${this.id}`),
+          axios
+            .get("http://localhost:3000/devices", {
+              params: { categoryId: this.id },
+            })
+            .then(
+              (res) => {
+                res.data.forEach((d) => {
+                  this.deleteDeviceByCategoryId(d.id);
+                });
+              },
+              (error) => {
+                console.log(error);
+              }
+            ),
+        ]);
         this.snackbar = true;
         this.itemCategories = this.itemCategories.filter(
           (device) => device.id != this.id
@@ -114,11 +130,12 @@ export default {
       this.id = "";
     },
 
-    // getAmountDevice(id) {
-    //   axios.get(`http://localhost:3000/devices/${this.id}`).then((response) => {
-    //     return response.data.filter((device) => device.categoryId == id).length;
-    //   });
-    // },
+    // delete device by categoryId
+    deleteDeviceByCategoryId(id) {
+      axios.delete(`http://localhost:3000/devices/${id}`).then((res) => {
+        console.log(id);
+      });
+    },
   },
 };
 </script>
